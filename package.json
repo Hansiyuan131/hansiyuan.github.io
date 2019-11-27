@@ -2,7 +2,8 @@
   "scripts": {
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs",
-    "deploy": "bash deploy.sh"
+    "deploy": "bash deploy.sh",
+    "cname": "bash cname.sh"
   },
   "devDependencies": {
     "@vuepress/plugin-back-to-top": "^1.2.0",
