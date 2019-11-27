@@ -23,7 +23,7 @@ module.exports = {
     themeConfig: {
         logo: '/img/favicon.png',
         lastUpdated: 'Last Updated',
-        repo: 'Hansiyuan131/hansiyuan131.github.io',
+        repo: 'Hansiyuan131/imall-blog',
         nav: navConf,
         sidebar: sidebarConf,
     }
