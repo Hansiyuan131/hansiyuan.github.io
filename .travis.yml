@@ -1,12 +1,8 @@
-sudo: false
 language: node_js
 node_js:
   - lts/*
 install:
   - npm ci
-branches:
-  only:
-    - master # build master branch only
 script:
   - npm run docs:build
   - npm run cname
