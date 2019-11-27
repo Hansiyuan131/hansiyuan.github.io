@@ -20,7 +20,7 @@ features:
 - title: 简洁至上1
   details: 以 Markdown 为中心的项目结构，以最少的配置帮助你专注于写作。
 ---
-
+[![Build Status](https://travis-ci.com/Hansiyuan131/hansiyuan131.github.io.svg?branch=master)](https://travis-ci.com/Hansiyuan131/hansiyuan131.github.io)
 ---
 ## Todolist
 
