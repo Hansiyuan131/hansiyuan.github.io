@@ -7,23 +7,19 @@ tagline: 白天想夜里哭、做梦都想去首都
 actionText: 最新文章 →
 actionLink: /算法/
 features:
-- title: 简洁至上
+- title: 简洁至上1
   details: 以 Markdown 为中心的项目结构，以最少的配置帮助你专注于写作。
-- title: 简洁至上
+- title: 简洁至上1
   details: 以 Markdown 为中心的项目结构，以最少的配置帮助你专注于写作。
-- title: 简洁至上
+- title: 简洁至上1
   details: 以 Markdown 为中心的项目结构，以最少的配置帮助你专注于写作。
-- title: 简洁至上
+- title: 简洁至上1
   details: 以 Markdown 为中心的项目结构，以最少的配置帮助你专注于写作。
-- title: 简洁至上
+- title: 简洁至上1
   details: 以 Markdown 为中心的项目结构，以最少的配置帮助你专注于写作。
-- title: 简洁至上
+- title: 简洁至上1
   details: 以 Markdown 为中心的项目结构，以最少的配置帮助你专注于写作。
 ---
-
-
-123123121231312312113    test
-
 
 ---
 ## Todolist
