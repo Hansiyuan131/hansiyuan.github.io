@@ -1,8 +1,12 @@
+sudo: false
 language: node_js
 node_js:
   - lts/*
 install:
   - npm ci
+branches:
+  only:
+    - master # build master branch only
 script:
   - npm run docs:build
   - npm run cname
@@ -13,4 +17,4 @@ deploy:
   github-token: $TravisCI # a token generated on github allowing travis to push code on you repository
   keep-history: true
   on:
-    branch: feature
+    branch: master
