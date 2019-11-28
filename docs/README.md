@@ -1,5 +1,5 @@
 ---
-# home: true
+home: true
 heroImage: /img/favicon.png
 tagline: Stay Hungry. Stay Foolish
 features:
