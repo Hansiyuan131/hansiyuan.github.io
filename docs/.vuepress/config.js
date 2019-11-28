@@ -26,5 +26,9 @@ module.exports = {
         repo: 'Hansiyuan131/hansiyuan131.github.io',
         nav: navConf,
         sidebar: sidebarConf,
+        docsDir: 'docs',
+        docsBranch: 'feature',
+        editLinks: true,
+        editLinkText: '编辑此文档'
     }
 }
