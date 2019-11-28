@@ -11,8 +11,6 @@ features:
   details: 数据结构与算法之美,记录算法相关笔记
 ---
 
----
-
 [![Build Status](https://travis-ci.com/Hansiyuan131/hansiyuan131.github.io.svg?branch=feature)](https://travis-ci.com/Hansiyuan131/hansiyuan131.github.io)
 
 

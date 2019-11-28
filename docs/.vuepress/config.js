@@ -3,7 +3,7 @@ const navConf=require('../../config/navConfig');
 const sidebarConf=require('../../config/sidebarConfig/index');
 
 module.exports = {
-    // title: 'iMall',
+    title: 'iMall',
     base:'',
     description: 'Stay Hungry. Stay Foolish',
     head: [
