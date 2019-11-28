@@ -1,5 +1,7 @@
 ---
 home: true
+comment: false
+single: true
 heroImage: /img/favicon.png
 tagline: Stay Hungry. Stay Foolish
 features:
@@ -9,6 +11,8 @@ features:
   details: 基于人工智能的B2B2C电商网站,专注技术、不忘初心
 - title: 算法
   details: 数据结构与算法之美,记录算法相关笔记
+
+footer: MIT Licensed | Copyright © 2019 Siyuan Han
 ---
 
 [![Build Status](https://travis-ci.com/Hansiyuan131/hansiyuan131.github.io.svg?branch=feature)](https://travis-ci.com/Hansiyuan131/hansiyuan131.github.io)
