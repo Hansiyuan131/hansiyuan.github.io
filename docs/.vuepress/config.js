@@ -3,9 +3,9 @@ const navConf=require('../../config/navConfig');
 const sidebarConf=require('../../config/sidebarConfig/index');
 
 module.exports = {
-    title: 'iMall',
+    // title: 'iMall',
     base:'',
-    description: '专注技术',
+    description: '专注技术、不忘初心',
     head: [
         ['link', { rel: 'icon', href: '/img/favicon.png' }],
         ['link', { rel: 'manifest', href: '/manifest.json' }]
