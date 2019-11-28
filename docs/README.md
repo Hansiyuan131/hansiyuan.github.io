@@ -1,64 +1,20 @@
 ---
-home: true
+# home: true
 heroImage: /img/favicon.png
-comment: false
-# single: true
-# tagline: 白天想夜里哭、做梦都想去首都
-# actionText: 最新文章 →
-# actionLink: /算法/
+tagline: Stay Hungry. Stay Foolish
 features:
-- title: 简洁至上11
-  details: 以 Markdown 为中心的项目结构，以最少的配置帮助你专注于写作。
-- title: 简洁至上11
-  details: 以 Markdown 为中心的项目结构，以最少的配置帮助你专注于写作。
-- title: 简洁至上11
-  details: 以 Markdown 为中心的项目结构，以最少的配置帮助你专注于写作。
-- title: 简洁至上11
-  details: 以 Markdown 为中心的项目结构，以最少的配置帮助你专注于写作。
-- title: 简洁至上11
-  details: 以 Markdown 为中心的项目结构，以最少的配置帮助你专注于写作。
-- title: 简洁至上11
-  details: 以 Markdown 为中心的项目结构，以最少的配置帮助你专注于写作。
+- title: Bolg
+  details: 记录iMall项目开发中的知识点，以及日常技术博客
+- title: iMall
+  details: 基于人工智能的B2B2C电商网站,专注技术、不忘初心
+- title: 算法
+  details: 数据结构与算法之美,记录算法相关笔记
 ---
+
+---
+
 [![Build Status](https://travis-ci.com/Hansiyuan131/hansiyuan131.github.io.svg?branch=feature)](https://travis-ci.com/Hansiyuan131/hansiyuan131.github.io)
----
-## Todolist
-
-[[toc]]
-
-:tada: :100:
-
-### 123
 
 
-::: tip
-This is a tip
-:::
+> 十年磨一剑
 
-### 456
-
-
-
-``` js
-export default {
-  name: 'MyComponent',
-  // ...
-}
-```
-
-#### 123
-
-[算法](/算法/) 
-
-- 数据结构+算法
-    - 复杂度分析
-    - 数据结构
-        - 数组
-        - 链表
-        - ....
-    - 算法
-        - 冒泡排序
-        - 插入排序
-        - ...
-- leetcode
-- 剑指offer
