@@ -1,9 +1,9 @@
 {
-    "name": "iMall",
-    "short_name": "iMall",
-    "description": "iMall的文档",
+    "name": "Siyuan Han",
+    "short_name": "Han",
+    "description": "韩思远的个人博客",
     "icons": [{
-      "src": "img/favicon.png",
+      "src": "img/logo.png",
       "sizes": "48x48",
       "type": "image/png"
     }],

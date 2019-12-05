@@ -2,7 +2,7 @@
 home: true
 comment: false
 single: true
-heroImage: /img/favicon.png
+heroImage: /img/logo.png
 tagline: Stay Hungry. Stay Foolish
 features:
 - title: Bolg
@@ -14,9 +14,4 @@ features:
 
 footer: MIT Licensed | Copyright © 2019 Siyuan Han
 ---
-
 [![Build Status](https://travis-ci.com/Hansiyuan131/hansiyuan131.github.io.svg?branch=feature)](https://travis-ci.com/Hansiyuan131/hansiyuan131.github.io)
-
-
-> 十年磨一剑
-

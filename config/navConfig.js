@@ -1,6 +1,9 @@
 module.exports = [
     { text: 'Home', link: '/' },
     { 
+        text: '常用导航', link: '/常用导航/'
+    },
+    { 
         text: 'iMall', 
         items: [
             { text: 'iMall', link: '/iMall/' },

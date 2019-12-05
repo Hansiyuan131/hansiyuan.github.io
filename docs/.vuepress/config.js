@@ -3,11 +3,11 @@ const navConf=require('../../config/navConfig');
 const sidebarConf=require('../../config/sidebarConfig/index');
 
 module.exports = {
-    title: 'iMall',
+    title: '韩思远的博客',
     base:'',
     description: 'Stay Hungry. Stay Foolish',
     head: [
-        ['link', { rel: 'icon', href: '/img/favicon.png' }],
+        ['link', { rel: 'icon', href: '/img/logo.png' }],
         ['link', { rel: 'manifest', href: '/manifest.json' }]
     ],
     plugins: ['@vuepress/pwa'],
@@ -22,7 +22,7 @@ module.exports = {
         '@vuepress/active-header-links'
     ],
     themeConfig: {
-        logo: '/img/favicon.png',
+        logo: '/img/logo.png',
         lastUpdated: 'Last Updated',
         repo: 'Hansiyuan131/hansiyuan131.github.io',
         nav: navConf,
