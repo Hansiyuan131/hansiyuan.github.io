@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.com/Hansiyuan131/hansiyuan131.github.io.svg?branch=feature)](https://travis-ci.com/Hansiyuan131/hansiyuan131.github.io)
+[![Build Status](https://travis-ci.com/Hansiyuan131/hansiyuan131.github.io.svg?branch=feature)](https://travis-ci.com/Hansiyuan131/hansiyuan131.github.io) ![](https://img.shields.io/github/forks/Hansiyuan131/hansiyuan131.github.io) ![](https://img.shields.io/github/stars/Hansiyuan131/hansiyuan131.github.io)
 
 ## 韩思远个人博客
 
@@ -22,7 +22,7 @@
 > 最近在忙四级...拖更
 
 
-- [ ] 四级
+- [X] 四级
 - [ ] 算法
 - [ ] imall项目开发（后期有可能更改为在线教育平台-->毕设原因）
     - 秒杀模块
