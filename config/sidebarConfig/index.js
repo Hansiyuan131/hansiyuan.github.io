@@ -4,6 +4,7 @@ const 剑指Offer = require('./剑指Offer/index')
 const 量化分析 = require('./量化分析/index')
 const 爬虫 = require('./爬虫/index')
 const 算法 = require('./算法/index')
+const 常用导航 = require('./常用导航/index')
 
 const about = require('./about/index')
 const DevOps = require('./DevOps/index')
@@ -26,6 +27,7 @@ module.exports = {
     '/量化分析/': 量化分析,
     '/算法/': 算法,
     '/爬虫/': 爬虫,
+    '/常用导航/': 常用导航,
     '/about/': about,
     '/DevOps/': DevOps,
     '/iMall/': iMall,
