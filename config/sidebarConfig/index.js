@@ -27,7 +27,7 @@ module.exports = {
     '/量化分析/': 量化分析,
     '/算法/': 算法,
     '/爬虫/': 爬虫,
-    '/常用导航/': 常用导航,
+    '/常用导航/': '',
     '/about/': about,
     '/DevOps/': DevOps,
     '/iMall/': iMall,
