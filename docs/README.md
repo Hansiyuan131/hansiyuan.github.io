@@ -7,15 +7,13 @@ tagline: Stay Hungry. Stay Foolish
 features:
 - title: 常用导航
   details: 个人常用导航链接集合
-- title: iMall
+- title: 项目
   details: 基于人工智能的B2B2C电商网站搭建文档,专注技术、不忘初心
 - title: 算法
   details: 数据结构与算法之美,记录算法相关笔记，leetcode,剑指offer等
-- title: Java
-  details: 记录Java开发中遇到的问题及解决方案，Spring相关知识
-- title: Python
-  details: 主要以爬虫为主，和学习量化分析过程笔记
-- title: Web
+- title: 后端
+  details: 记录Java开发中遇到的问题及解决方案，Spring相关知识;Python主要以爬虫为主，和学习量化分析过程笔记
+- title: 前端
   details: 记录前端开发遇到的问题，以Vue、React为主
 - title: 数据库
   details: 开发中关系型和非关系型数据库的使用及优化
@@ -30,6 +28,5 @@ footer: MIT Licensed | Copyright © 2019 Siyuan Han
 ## TODO
 
 - 算法更新
-- 博客迁移
 - Python爬虫
 - Java项目框架搭建

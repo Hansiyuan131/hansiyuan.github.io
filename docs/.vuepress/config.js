@@ -1,9 +1,9 @@
 const pluginConf=require('../../config/pluginConfig');
 const navConf=require('../../config/navConfig');
-const sidebarConf=require('../../config/sidebarConfig/index');
+const sidebarConf=require('../../config/sidebarConf');
 
 module.exports = {
-    title: '韩思远的博客',
+    title: 'Mr.Han\'s blog',
     base:'',
     description: 'Stay Hungry. Stay Foolish',
     head: [
@@ -11,6 +11,7 @@ module.exports = {
         ['link', { rel: 'manifest', href: '/manifest.json' }]
     ],
     plugins: ['@vuepress/pwa'],
+    plugins: ['autobar'],
     locales: {
         '/': {
           lang: 'zh-CN',

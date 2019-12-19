@@ -1,12 +1,14 @@
-const utils={
-    gensidebar:function(title,collapsable=ture, sidebarDepth=1, children=['/']){
-        return {
-            title,
-            collapsable,
-            sidebarDepth,
-            children,
-        }
+const utils = {
+    genSidebar: function (title, children = [''], collapsable = true, sidebarDepth = 2) {
+      var arr = new Array();
+      arr.push({
+        title,
+        collapsable,
+        sidebarDepth,
+        children
+      })
+      return arr;
     }
-}
-
-module.exports=utils;
+  };
+  
+  module.exports = utils;
