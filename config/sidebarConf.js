@@ -27,7 +27,10 @@ const filehelper = require(rootpath+'/utils/getFilenames.js');
      '/后端/Python/Python基础/': utils.genSidebar('Python基础', filehelper.getFileName(docs + "/后端/Python/Python基础/"), false),
      '/后端/Python/Python爬虫/': utils.genSidebar('Python爬虫', filehelper.getFileName(docs + "/后端/Python/Python爬虫/"), false),
      '/后端/Python/个性化推荐/': utils.genSidebar('个性化推荐', filehelper.getFileName(docs + "/后端/Python/个性化推荐/"), false),
-     '/后端/Python/量化分析/': utils.genSidebar('量化分析', filehelper.getFileName(docs + "/后端/Python/量化分析/"), false),
+     '/后端/Python/PythonWeb/': utils.genSidebar('PythonWeb', filehelper.getFileName(docs + "/后端/Python/PythonWeb/"), false),
+     '/后端/Python/Python机器学习/': utils.genSidebar('Python机器学习', filehelper.getFileName(docs + "/后端/Python/Python机器学习/"), false),
+     '/后端/Python/Python深度学习/': utils.genSidebar('Python深度学习', filehelper.getFileName(docs + "/后端/Python/Python深度学习/"), false),
+     '/后端/Python/Python数据分析/': utils.genSidebar('Python数据分析', filehelper.getFileName(docs + "/后端/Python/Python数据分析/"), false),
 
      // 数据库
      '/数据库/Mysql/': utils.genSidebar('Mysql', filehelper.getFileName(docs + "/数据库/Mysql/"), false),
