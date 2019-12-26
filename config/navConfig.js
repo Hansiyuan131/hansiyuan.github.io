@@ -79,6 +79,8 @@ module.exports = [
             { text: 'DevOps', link: '/其他/DevOps/' },
             { text: '读书', link: '/其他/读书/' },
             { text: '关于我', link: '/其他/about/' },
+            { text: '每月小记', link: '/其他/每月小记/' },
+            { text: 'Linux', link: '/其他/Linux/' },
         ]
     },
     { 

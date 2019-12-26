@@ -44,6 +44,8 @@ const filehelper = require(rootpath+'/utils/getFilenames.js');
      '/其他/about/': utils.genSidebar('关于我', filehelper.getFileName(docs + "/其他/about/"), false),
      '/其他/读书/': utils.genSidebar('读书', filehelper.getFileName(docs + "/其他/读书/"), false),
      '/其他/DevOps/': utils.genSidebar('DevOps', filehelper.getFileName(docs + "/其他/DevOps/"), false),
+     '/其他/每月小记/': utils.genSidebar('每月小记', filehelper.getFileName(docs + "/其他/每月小记/"), false),
+     '/其他/Linux/': utils.genSidebar('Linux', filehelper.getFileName(docs + "/其他/Linux/"), false),
      
 
      // 测试
