@@ -40,7 +40,7 @@ module.exports = [
                 text: 'Python', items: [
                     { text: 'Python基础', link: '/后端/Python/Python基础/' },
                     { text: 'PythonWeb', link: '/后端/Python/PythonWeb/' },
-                    { text: 'Python爬虫', link: '/后端/Python/Python爬虫/' },
+                    { text: '爬虫', link: '/后端/Python/Python爬虫/' },
                     { text: '个性化推荐', link: '/后端/Python/个性化推荐/' },
                     { text: '数据分析', link: '/后端/Python/数据分析/' },
                     { text: '量化分析', link: '/后端/Python/量化分析/' },
@@ -76,22 +76,11 @@ module.exports = [
     { 
         text: '其他',
         items: [
+            { text: '关于我', link: '/其他/about/' },
+            { text: 'Linux', link: '/其他/Linux/' },
             { text: 'DevOps', link: '/其他/DevOps/' },
             { text: '读书', link: '/其他/读书/' },
-            { text: '关于我', link: '/其他/about/' },
             { text: '每月小记', link: '/其他/每月小记/' },
-            { text: 'Linux', link: '/其他/Linux/' },
-        ]
-    },
-    { 
-        text: 'Test链接',
-        items: [
-            { text: '区块链', link: '/Other/BlockChain/' },
-            { text: '金融', link: '/Other/Finance/' },
-            { text: 'Git', link: '/Other/Git/' },
-            { text: 'Hexo', link: '/Other/Hexo/' },
-            { text: 'Vue', link: '/Other/Vue/' },
-            { text: 'VuePress', link: '/Other/VuePress/' },
         ]
     },
 ];
