@@ -47,15 +47,6 @@ const filehelper = require(rootpath+'/utils/getFilenames.js');
      '/其他/每月小记/': utils.genSidebar('每月小记', filehelper.getFileName(docs + "/其他/每月小记/"), false),
      '/其他/Linux/': utils.genSidebar('Linux', filehelper.getFileName(docs + "/其他/Linux/"), false),
      
-
-     // 测试
-     '/Test/BlockChain/': utils.genSidebar('区块链', filehelper.getFileName(docs + "/Test/BlockChain/"), false),
-     '/Test/Finance/': utils.genSidebar('金融', filehelper.getFileName(docs + "/Test/Finance/"), false),
-     '/Test/Git/': utils.genSidebar('Git', filehelper.getFileName(docs + "/Test/Git/"), false),
-     '/Test/Hexo/': utils.genSidebar('Hexo', filehelper.getFileName(docs + "/Test/Hexo/"), false),
-     '/Test/Vue/': utils.genSidebar('Vue', filehelper.getFileName(docs + "/Test/Vue/"), false),
-     '/Test/VuePress/': utils.genSidebar('VuePress', filehelper.getFileName(docs + "/Test/VuePress/"), false),
-
      // 一定要放在最后！！！
      // 根目录下的 sidebar, 对于所有未匹配到的都会应用该 sidebar
      // '/': [''] // 此处选择禁用
