@@ -38,14 +38,11 @@ module.exports = [
             },
             {
                 text: 'Python', items: [
-                    { text: 'Python基础', link: '/后端/Python/Python基础/' },
-                    { text: 'PythonWeb', link: '/后端/Python/PythonWeb/' },
-                    { text: '爬虫', link: '/后端/Python/Python爬虫/' },
-                    { text: '个性化推荐', link: '/后端/Python/个性化推荐/' },
-                    { text: '数据分析', link: '/后端/Python/数据分析/' },
+                    { text: '基础语法', link: '/后端/Python/基础语法/' },
+                    { text: 'Web框架', link: '/后端/Python/Web框架/' },
+                    { text: '爬虫', link: '/后端/Python/爬虫/' },
+                    { text: '人工智能', link: '/后端/Python/人工智能/' },
                     { text: '量化分析', link: '/后端/Python/量化分析/' },
-                    { text: '机器学习', link: '/后端/Python/机器学习/' },
-                    { text: '深度学习', link: '/后端/Python/深度学习/' },
                 ]
             }
         ] 
