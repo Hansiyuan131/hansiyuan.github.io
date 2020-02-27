@@ -3,7 +3,7 @@ const navConf=require('../../config/navConfig');
 const sidebarConf=require('../../config/sidebarConf');
 
 module.exports = {
-    title: 'Mr.Han\'s blog',
+    title: '7Tree技术栈',
     base:'',
     description: 'Stay Hungry. Stay Foolish',
     head: [
