@@ -24,13 +24,11 @@ const filehelper = require(rootpath+'/utils/getFilenames.js');
      '/后端/Java/Java框架/': utils.genSidebar('Java框架', filehelper.getFileName(docs + "/后端/Java/Java框架/"), false),
      '/后端/Net/Net基础/': utils.genSidebar('Net基础', filehelper.getFileName(docs + "/后端/Net/Net基础/"), false),
      '/后端/Net/Net框架/': utils.genSidebar('Net框架', filehelper.getFileName(docs + "/后端/Net/Net框架/"), false),
-     '/后端/Python/Python基础/': utils.genSidebar('Python基础', filehelper.getFileName(docs + "/后端/Python/Python基础/"), false),
-     '/后端/Python/Python爬虫/': utils.genSidebar('Python爬虫', filehelper.getFileName(docs + "/后端/Python/Python爬虫/"), false),
-     '/后端/Python/个性化推荐/': utils.genSidebar('个性化推荐', filehelper.getFileName(docs + "/后端/Python/个性化推荐/"), false),
-     '/后端/Python/PythonWeb/': utils.genSidebar('PythonWeb', filehelper.getFileName(docs + "/后端/Python/PythonWeb/"), false),
-     '/后端/Python/Python机器学习/': utils.genSidebar('Python机器学习', filehelper.getFileName(docs + "/后端/Python/Python机器学习/"), false),
-     '/后端/Python/Python深度学习/': utils.genSidebar('Python深度学习', filehelper.getFileName(docs + "/后端/Python/Python深度学习/"), false),
-     '/后端/Python/Python数据分析/': utils.genSidebar('Python数据分析', filehelper.getFileName(docs + "/后端/Python/Python数据分析/"), false),
+     '/后端/Python/基础语法/': utils.genSidebar('基础语法', filehelper.getFileName(docs + "/后端/Python/基础语法/"), false),
+     '/后端/Python/爬虫/': utils.genSidebar('爬虫', filehelper.getFileName(docs + "/后端/Python/爬虫/"), false),
+     '/后端/Python/量化分析/': utils.genSidebar('量化分析', filehelper.getFileName(docs + "/后端/Python/量化分析/"), false),
+     '/后端/Python/Web框架/': utils.genSidebar('Web框架', filehelper.getFileName(docs + "/后端/Python/Web框架/"), false),
+     '/后端/Python/人工智能/': utils.genSidebar('人工智能', filehelper.getFileName(docs + "/后端/Python/人工智能/"), false),
 
      // 数据库
      '/数据库/Mysql/': utils.genSidebar('Mysql', filehelper.getFileName(docs + "/数据库/Mysql/"), false),
