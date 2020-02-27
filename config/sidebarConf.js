@@ -19,16 +19,21 @@ const filehelper = require(rootpath+'/utils/getFilenames.js');
      '/前端/React/': utils.genSidebar('React', filehelper.getFileName(docs + "/前端/React/"), false),
      '/前端/Vue/': utils.genSidebar('Vue', filehelper.getFileName(docs + "/前端/Vue/"), false),
 
-     //后端
-     '/后端/Java/Java基础/': utils.genSidebar('Java基础', filehelper.getFileName(docs + "/后端/Java/Java基础/"), false),
-     '/后端/Java/Java框架/': utils.genSidebar('Java框架', filehelper.getFileName(docs + "/后端/Java/Java框架/"), false),
-     '/后端/Net/Net基础/': utils.genSidebar('Net基础', filehelper.getFileName(docs + "/后端/Net/Net基础/"), false),
-     '/后端/Net/Net框架/': utils.genSidebar('Net框架', filehelper.getFileName(docs + "/后端/Net/Net框架/"), false),
-     '/后端/Python/基础语法/': utils.genSidebar('基础语法', filehelper.getFileName(docs + "/后端/Python/基础语法/"), false),
-     '/后端/Python/爬虫/': utils.genSidebar('爬虫', filehelper.getFileName(docs + "/后端/Python/爬虫/"), false),
-     '/后端/Python/量化分析/': utils.genSidebar('量化分析', filehelper.getFileName(docs + "/后端/Python/量化分析/"), false),
-     '/后端/Python/Web框架/': utils.genSidebar('Web框架', filehelper.getFileName(docs + "/后端/Python/Web框架/"), false),
-     '/后端/Python/人工智能/': utils.genSidebar('人工智能', filehelper.getFileName(docs + "/后端/Python/人工智能/"), false),
+      //后端
+      '/后端/Java/Java基础/': utils.genSidebar('Java基础', filehelper.getFileName(docs + "/后端/Java/Java基础/"), false),
+      '/后端/Java/Java框架/': utils.genSidebar('Java框架', filehelper.getFileName(docs + "/后端/Java/Java框架/"), false),
+      '/后端/Net/Net基础/': utils.genSidebar('Net基础', filehelper.getFileName(docs + "/后端/Net/Net基础/"), false),
+      '/后端/Net/Net框架/': utils.genSidebar('Net框架', filehelper.getFileName(docs + "/后端/Net/Net框架/"), false),
+
+     //人工智能
+     '/Python/基础语法/': utils.genSidebar('基础语法', filehelper.getFileName(docs + "/Python/基础语法/"), false),
+     '/Python/爬虫/': utils.genSidebar('爬虫', filehelper.getFileName(docs + "/Python/爬虫/"), false),
+     '/Python/量化分析/': utils.genSidebar('量化分析', filehelper.getFileName(docs + "/Python/量化分析/"), false),
+     '/Python/Web框架/': utils.genSidebar('Web框架', filehelper.getFileName(docs + "/Python/Web框架/"), false),
+     '/Python/人工智能/': utils.genSidebar('人工智能', filehelper.getFileName(docs + "/Python/人工智能/"), false),
+
+    
+    
 
      // 数据库
      '/数据库/Mysql/': utils.genSidebar('Mysql', filehelper.getFileName(docs + "/数据库/Mysql/"), false),

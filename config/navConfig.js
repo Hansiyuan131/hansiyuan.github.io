@@ -36,16 +36,25 @@ module.exports = [
                     { text: 'Net框架', link: '/后端/Net/Net框架/' },
                 ]
             },
+            
+        ] 
+    },
+    {
+        text: '人工智能', items: [
             {
-                text: 'Python', items: [
-                    { text: '基础语法', link: '/后端/Python/基础语法/' },
-                    { text: 'Web框架', link: '/后端/Python/Web框架/' },
-                    { text: '爬虫', link: '/后端/Python/爬虫/' },
-                    { text: '人工智能', link: '/后端/Python/人工智能/' },
-                    { text: '量化分析', link: '/后端/Python/量化分析/' },
+                text: 'Python基础', items: [
+                    { text: 'Python基础语法', link: '/Python/基础语法/' },
+                    { text: 'PythonWeb框架', link: '/Python/Web框架/' },
+                    { text: '爬虫', link: '/Python/爬虫/' },
+                ]
+            },
+            {
+                text: '人工智能', items: [
+                    { text: '人工智能', link: '/Python/人工智能/' },
+                    { text: '量化分析', link: '/Python/量化分析/' },
                 ]
             }
-        ] 
+        ]
     },
     { 
         text: '算法',
