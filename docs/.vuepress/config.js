@@ -5,10 +5,12 @@ const sidebarConf=require('../../config/sidebarConf');
 module.exports = {
     title: '7Tree技术栈',
     base:'',
-    description: 'Stay Hungry. Stay Foolish',
+    description: 'Talk is cheap. Show me the code',
     head: [
-        ['link', { rel: 'icon', href: '/img/logo.png' }],
-        ['link', { rel: 'manifest', href: '/manifest.json' }]
+        ['link', { rel: 'apple-touch-icon', href: '/apple-touch-icon.png' }],
+        ['link', { rel: 'icon', href: '/favicon-32x32.png' }],
+        ['link', { rel: 'manifest', href: '/manifest.json' }],
+        ['meta', { name: 'theme-color', content: '#ffffff' }]
     ],
     plugins: ['@vuepress/pwa'],
     plugins: ['autobar'],
@@ -19,11 +21,9 @@ module.exports = {
     },
     plugins: [
         pluginConf,
-        '@vuepress/back-to-top',
-        '@vuepress/active-header-links'
     ],
     themeConfig: {
-        logo: '/img/logo.png',
+        logo: '/images/icons/icon-72x72.png',
         lastUpdated: 'Last Updated',
         repo: 'Hansiyuan131/hansiyuan131.github.io',
         nav: navConf,

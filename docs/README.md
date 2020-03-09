@@ -2,8 +2,8 @@
 home: true
 comment: false
 single: null
-heroImage: /img/logo.png
-tagline: Stay Hungry. Stay Foolish
+heroImage: /images/icons/icon-128x128.png
+tagline: Talk is cheap. Show me the code
 features:
 - title: 常用导航
   details: 个人常用导航链接集合
