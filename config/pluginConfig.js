@@ -8,5 +8,8 @@ module.exports = {
         }
     },
     '@vuepress/back-to-top': true,
-    '@vuepress/active-header-links': true
+    '@vuepress/active-header-links': true,
+    '@vuepress/medium-zoom': {
+        selector: '.default-content img',
+    }
 }};
