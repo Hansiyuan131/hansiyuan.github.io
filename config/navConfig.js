@@ -6,7 +6,7 @@ module.exports = [
     { 
         text: '项目', 
         items: [
-            { text: 'imall', link: '/项目/imall/' },
+            { text: 'iMall', link: '/项目/iMall/' },
             { text: 'sn-reader', link: '/项目/sn-reader/' }
         ]
     },
