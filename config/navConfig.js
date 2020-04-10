@@ -6,8 +6,8 @@ module.exports = [
     { 
         text: '项目', 
         items: [
-            { text: 'iMall', link: '/项目/iMall/' },
-            { text: 'iMall-admin-web', link: '/项目/iMall-admin-web/' }
+            { text: 'imall', link: '/项目/imall/' },
+            { text: 'sn-reader', link: '/项目/sn-reader/' }
         ]
     },
     { 
