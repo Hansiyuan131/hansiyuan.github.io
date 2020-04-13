@@ -37,6 +37,8 @@ const filehelper = require(rootpath+'/utils/getFilenames.js');
 
      // 数据库
      '/数据库/Mysql/': utils.genSidebar('Mysql', filehelper.getFileName(docs + "/数据库/Mysql/"), false),
+     '/数据库/SQLServer/': utils.genSidebar('SQLServer', filehelper.getFileName(docs + "/数据库/SQLServer/"), false),
+
 
      // 算法
      '/算法/算法基础/': utils.genSidebar('算法基础', filehelper.getFileName(docs + "/算法/算法基础/"), false),

@@ -77,6 +77,7 @@ module.exports = [
         text: '数据库',
         items: [
             { text: 'Mysql', link: '/数据库/Mysql/' },
+            { text: 'SQLServer', link: '/数据库/SQLServer/' },
         ]
     },
     { 

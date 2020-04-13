@@ -35,7 +35,7 @@
 
 ### 思维导图
 
-![思维导图](http://q1pt18a8n.bkt.clouddn.com/images/imall/%E7%AE%97%E6%B3%95/%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE.jpg)
+![思维导图](http://img.hansiyuan.top/images/blog/%E7%AE%97%E6%B3%95/%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE.jpg)
 
 
 
