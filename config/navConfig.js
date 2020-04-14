@@ -27,7 +27,7 @@ module.exports = [
             {
                 text: 'Java', items: [
                     { text: 'Java基础', link: '/后端/Java/Java基础/' },
-                    { text: 'Java框架', link: '/后端/Java/Java框架/' },
+                    { text: 'Java开发', link: '/后端/Java/Java开发/' },
                 ]
             },
             {

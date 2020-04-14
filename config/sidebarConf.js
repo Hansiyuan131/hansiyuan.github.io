@@ -21,7 +21,7 @@ const filehelper = require(rootpath+'/utils/getFilenames.js');
 
       //后端
       '/后端/Java/Java基础/': utils.genSidebar('Java基础', filehelper.getFileName(docs + "/后端/Java/Java基础/"), false),
-      '/后端/Java/Java框架/': utils.genSidebar('Java框架', filehelper.getFileName(docs + "/后端/Java/Java框架/"), false),
+      '/后端/Java/Java开发/': utils.genSidebar('Java开发', filehelper.getFileName(docs + "/后端/Java/Java开发/"), false),
       '/后端/Net/Net基础/': utils.genSidebar('Net基础', filehelper.getFileName(docs + "/后端/Net/Net基础/"), false),
       '/后端/Net/Net框架/': utils.genSidebar('Net框架', filehelper.getFileName(docs + "/后端/Net/Net框架/"), false),
 
