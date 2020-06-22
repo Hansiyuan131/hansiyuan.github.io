@@ -12,7 +12,7 @@ features:
 - title: 算法
   details: 数据结构与算法之美,记录算法相关笔记，leetcode,剑指offer等
 - title: 后端
-  details: 记录Java开发中遇到的问题及解决方案，Spring相关知识;Python主要以爬虫为主，和学习量化分析过程笔记
+  details: 记录Java开发中遇到的问题及解决方案;Python主要以爬虫和人工智能为主
 - title: 前端
   details: 记录前端开发遇到的问题，以Vue、React为主
 - title: 数据库
@@ -30,3 +30,5 @@ footer: MIT Licensed | Copyright © 2019 Siyuan Han
 - 算法更新
 - Python爬虫
 - Java项目框架搭建
+
+## 最近更新
