@@ -26,10 +26,8 @@ const filehelper = require(rootpath+'/utils/getFilenames.js');
       '/后端/Net/Net框架/': utils.genSidebar('Net框架', filehelper.getFileName(docs + "/后端/Net/Net框架/"), false),
 
      //人工智能
-     '/Python/基础语法/': utils.genSidebar('基础语法', filehelper.getFileName(docs + "/Python/基础语法/"), false),
      '/Python/爬虫/': utils.genSidebar('爬虫', filehelper.getFileName(docs + "/Python/爬虫/"), false),
      '/Python/量化分析/': utils.genSidebar('量化分析', filehelper.getFileName(docs + "/Python/量化分析/"), false),
-     '/Python/Web框架/': utils.genSidebar('Web框架', filehelper.getFileName(docs + "/Python/Web框架/"), false),
      '/Python/人工智能/': utils.genSidebar('人工智能', filehelper.getFileName(docs + "/Python/人工智能/"), false),
 
     
@@ -38,6 +36,8 @@ const filehelper = require(rootpath+'/utils/getFilenames.js');
      // 数据库
      '/数据库/Mysql/': utils.genSidebar('Mysql', filehelper.getFileName(docs + "/数据库/Mysql/"), false),
      '/数据库/SQLServer/': utils.genSidebar('SQLServer', filehelper.getFileName(docs + "/数据库/SQLServer/"), false),
+     '/数据库/MongoDB/': utils.genSidebar('MongoDB', filehelper.getFileName(docs + "/数据库/MongoDB/"), false),
+     '/数据库/Redis/': utils.genSidebar('Redis', filehelper.getFileName(docs + "/数据库/Redis/"), false),
 
 
      // 算法
@@ -51,6 +51,7 @@ const filehelper = require(rootpath+'/utils/getFilenames.js');
      '/其他/DevOps/': utils.genSidebar('DevOps', filehelper.getFileName(docs + "/其他/DevOps/"), false),
      '/其他/每月小记/': utils.genSidebar('每月小记', filehelper.getFileName(docs + "/其他/每月小记/"), false),
      '/其他/Linux/': utils.genSidebar('Linux', filehelper.getFileName(docs + "/其他/Linux/"), false),
+     '/其他/常用导航/': utils.genSidebar('常用导航', filehelper.getFileName(docs + "/其他/常用导航/"), false),
      
      // 一定要放在最后！！！
      // 根目录下的 sidebar, 对于所有未匹配到的都会应用该 sidebar

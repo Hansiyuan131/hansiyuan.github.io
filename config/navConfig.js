@@ -1,9 +1,6 @@
 module.exports = [
     { text: 'Home', link: '/' },
     { 
-        text: '常用导航', link: '/常用导航/'
-    },
-    { 
         text: '项目', 
         items: [
             { text: 'iMall', link: '/项目/iMall/' },
@@ -14,12 +11,9 @@ module.exports = [
         text: '前端',
         items: [
             {
-                text: '框架', items: [
-                    { text: 'Vue', link: '/前端/Vue/' },
-                    { text: 'React', link: '/前端/React/' }
-                ]
+                text: 'Vue', link: '/前端/Vue/' ,
+                text: 'React', link: '/前端/React/'
             }
-           
         ]
     },
     { 
@@ -42,11 +36,7 @@ module.exports = [
     {
         text: '人工智能', items: [
             {
-                text: 'Python基础', items: [
-                    { text: 'Python基础语法', link: '/Python/基础语法/' },
-                    { text: 'PythonWeb框架', link: '/Python/Web框架/' },
-                    { text: '爬虫', link: '/Python/爬虫/' },
-                ]
+                text: '爬虫', link: '/Python/爬虫/',
             },
             {
                 text: '人工智能', items: [
@@ -78,6 +68,8 @@ module.exports = [
         items: [
             { text: 'Mysql', link: '/数据库/Mysql/' },
             { text: 'SQLServer', link: '/数据库/SQLServer/' },
+            { text: 'Redis', link: '/数据库/Redis/' },
+            { text: 'MongoDB', link: '/数据库/MongoDB/' },
         ]
     },
     { 
@@ -88,6 +80,7 @@ module.exports = [
             { text: 'DevOps', link: '/其他/DevOps/' },
             { text: '读书', link: '/其他/读书/' },
             { text: '每月小记', link: '/其他/每月小记/' },
+            { text: '常用导航', link: '/其他/常用导航/' },
         ]
     },
 ];
