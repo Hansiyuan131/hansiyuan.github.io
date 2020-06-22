@@ -41,4 +41,6 @@ footer: MIT Licensed | Copyright © 2018 Siyuan Han
 ## TODO
 
 - 2020-6 六月小记
+- 算法文章更新
+- Maven与Gradle
 - 

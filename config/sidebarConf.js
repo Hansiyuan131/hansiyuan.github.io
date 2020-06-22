@@ -17,10 +17,8 @@ const filehelper = require(rootpath+'/utils/getFilenames.js');
      '/前端/Vue/': utils.genSidebar('Vue', filehelper.getFileName(docs + "/前端/Vue/"), false),
 
       //后端
-      '/后端/Java/Java基础/': utils.genSidebar('Java基础', filehelper.getFileName(docs + "/后端/Java/Java基础/"), false),
-      '/后端/Java/Java开发/': utils.genSidebar('Java开发', filehelper.getFileName(docs + "/后端/Java/Java开发/"), false),
-      '/后端/Net/Net基础/': utils.genSidebar('Net基础', filehelper.getFileName(docs + "/后端/Net/Net基础/"), false),
-      '/后端/Net/Net框架/': utils.genSidebar('Net框架', filehelper.getFileName(docs + "/后端/Net/Net框架/"), false),
+      '/后端/JavaBlog/': utils.genSidebar('JavaBlog', filehelper.getFileName(docs + "/后端/JavaBlog/"), false),
+      '/后端/NetBlog/': utils.genSidebar('NetBlog', filehelper.getFileName(docs + "/后端/NetBlog/"), false),
 
      //人工智能
      '/Python/爬虫/': utils.genSidebar('爬虫', filehelper.getFileName(docs + "/Python/爬虫/"), false),

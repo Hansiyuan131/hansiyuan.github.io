@@ -8,30 +8,19 @@ module.exports = [
         ]
     },
     { 
-        text: '前端',
-        items: [
-            {
-                text: 'Vue', link: '/前端/Vue/' ,
-                text: 'React', link: '/前端/React/'
-            }
-        ]
-    },
-    { 
-        text: '后端', items: [
-            {
-                text: 'Java', items: [
-                    { text: 'Java基础', link: '/后端/Java/Java基础/' },
-                    { text: 'Java开发', link: '/后端/Java/Java开发/' },
-                ]
-            },
-            {
-                text: '.NET', items: [
-                    { text: 'Net基础', link: '/后端/Net/Net基础/' },
-                    { text: 'Net框架', link: '/后端/Net/Net框架/' },
-                ]
-            },
-            
-        ] 
+        text: 'Blog', items: [
+        {
+            text: '后端', items: [
+                {text: 'JavaBlog', link: '/后端/JavaBlog/'},
+                {text: 'NetBlog', link: '/后端/NetBlog/'},
+            ]
+        },
+        {
+            text: '前端',items: [
+                {text: 'VueBlog', link: '/前端/Vue/'},
+                {text: 'ReactBlog', link: '/前端/React/'}
+            ]
+        }] 
     },
     {
         text: '人工智能', items: [
@@ -39,7 +28,7 @@ module.exports = [
                 text: '爬虫', link: '/Python/爬虫/',
             },
             {
-                text: '人工智能', items: [
+                text: '————————', items: [
                     { text: '人工智能', link: '/Python/人工智能/' },
                     { text: '量化分析', link: '/Python/量化分析/' },
                 ]
