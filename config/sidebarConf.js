@@ -8,9 +8,6 @@ const filehelper = require(rootpath+'/utils/getFilenames.js');
  * utils.genSidebar('Java基础', filehelper.getFileName(docs+"/Java/Basic/"), false),
  */
  module.exports = {
-     //常用导航
-     '/常用导航/': utils.genSidebar('常用导航', filehelper.getFileName(docs + "/常用导航/"), false),
-
      //项目
      '/项目/iMall/': utils.genSidebar('iMall', filehelper.getFileName(docs + "/项目/iMall/"), false),
      '/项目/sn-reader/': utils.genSidebar('sn-reader', filehelper.getFileName(docs + "/项目/sn-reader/"), false),
