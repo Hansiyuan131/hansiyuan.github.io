@@ -19,8 +19,6 @@
     > Maven 规范化构建流程 ：
     >
     > ![image-20200622173039369](http://img.hansiyuan.top/images/blog/JavaBlog/%E5%85%B3%E4%BA%8EMaven%E4%BD%A0%E9%9C%80%E8%A6%81%E4%BA%86%E8%A7%A3%E4%BB%80%E4%B9%88/image-20200622173039369.png)
-
- <Valine></Valine>
 -----------------------
 
 ## Maven 的使用
@@ -109,7 +107,6 @@
 
 项目目录下运行 mvn tomcat:run 运行maven项目
 ```
- <Valine></Valine>
 -------------------------
 
 ## Maven 常用命令
@@ -164,7 +161,6 @@
   - Default Lifecycle  构建的核心部分，编译，测试，打包，部署等等
   - Site Lifecycle  生成项目报告，站点，发布站点  
 
-<Valine></Valine>
 ------------------
 
 ## Maven 的概念模型  
@@ -208,7 +204,6 @@
 
   > maven 管理项目生命周期过程都是基于插件完成的。  
 
- <Valine></Valine>
 ----------
 
 ## 创建Maven工程
@@ -352,4 +347,5 @@
 
 ------------
 
- <Valine></Valine>
+
+<Valine></Valine>

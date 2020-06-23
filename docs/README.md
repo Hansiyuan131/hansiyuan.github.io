@@ -5,16 +5,14 @@ single: null
 heroImage: /images/icons/icon-128x128.png
 tagline: Talk is cheap. Show me the code
 features:
-- title: 常用导航
-  details: 个人常用导航链接集合
 - title: 项目
   details: 基于人工智能的B2B2C电商网站搭建文档,专注技术、不忘初心
 - title: 算法
   details: 数据结构与算法之美,记录算法相关文章，leetcode,剑指offer等
-- title: 后端
-  details: 记录Java开发中遇到的问题及解决方案;Python主要以爬虫和人工智能为主
-- title: 前端
-  details: 记录前端开发遇到的问题，以Vue、React为主
+- title: Blog
+  details: 记录Java开发中遇到的问题及解决方案;,记录前端开发遇到的问题，以Vue、React为主
+- title: 人工智能
+  details: 以爬虫和人工智能为主
 - title: 数据库
   details: 开发中关系型和非关系型数据库的使用及优化
 - title: 其他
