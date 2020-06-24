@@ -28,7 +28,7 @@ module.exports = [
                 text: '爬虫', link: '/Python/爬虫/',
             },
             {
-                text: '————————', items: [
+                text: ' ', items: [
                     { text: '人工智能', link: '/Python/人工智能/' },
                     { text: '量化分析', link: '/Python/量化分析/' },
                 ]
@@ -61,15 +61,22 @@ module.exports = [
             { text: 'MongoDB', link: '/数据库/MongoDB/' },
         ]
     },
+    {
+         text: 'DevOps', link: '/DevOps/' 
+    },
+    {
+         text: '每月小记', link: '/每月小记/' 
+    },
+    {
+         text: '关于我', link: '/关于我/' 
+    }, 
     { 
-        text: '其他',
-        items: [
-            { text: '关于我', link: '/其他/about/' },
-            { text: 'Linux', link: '/其他/Linux/' },
-            { text: 'DevOps', link: '/其他/DevOps/' },
-            { text: '读书', link: '/其他/读书/' },
-            { text: '每月小记', link: '/其他/每月小记/' },
-            { text: '常用导航', link: '/其他/常用导航/' },
-        ]
+        text: '读书', link: '/读书/' 
+    },
+    { 
+        text: '常用导航', link: '/常用导航/' 
+    },
+    { 
+        text: '其他',link: '/其他/'
     },
 ];

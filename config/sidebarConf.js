@@ -41,12 +41,13 @@ const filehelper = require(rootpath+'/utils/getFilenames.js');
      '/算法/剑指Offer/': utils.genSidebar('剑指Offer', filehelper.getFileName(docs + "/算法/剑指Offer/"), false),
 
      //其他
-     '/其他/about/': utils.genSidebar('关于我', filehelper.getFileName(docs + "/其他/about/"), false),
-     '/其他/读书/': utils.genSidebar('读书', filehelper.getFileName(docs + "/其他/读书/"), false),
-     '/其他/DevOps/': utils.genSidebar('DevOps', filehelper.getFileName(docs + "/其他/DevOps/"), false),
-     '/其他/每月小记/': utils.genSidebar('每月小记', filehelper.getFileName(docs + "/其他/每月小记/"), false),
-     '/其他/Linux/': utils.genSidebar('Linux', filehelper.getFileName(docs + "/其他/Linux/"), false),
-     '/其他/常用导航/': utils.genSidebar('常用导航', filehelper.getFileName(docs + "/其他/常用导航/"), false),
+     '/关于我/': utils.genSidebar('关于我', filehelper.getFileName(docs + "/关于我/"), false),
+     '/读书/': utils.genSidebar('读书', filehelper.getFileName(docs + "/读书/"), false),
+     '/DevOps/': utils.genSidebar('DevOps', filehelper.getFileName(docs + "/DevOps/"), false),
+     '/每月小记/': utils.genSidebar('每月小记', filehelper.getFileName(docs + "/每月小记/"), false),
+     '/常用导航/': utils.genSidebar('常用导航', filehelper.getFileName(docs + "/常用导航/"), false),
+     '/其他/': utils.genSidebar('其他', filehelper.getFileName(docs + "/其他/"), false),
+
      
      // 一定要放在最后！！！
      // 根目录下的 sidebar, 对于所有未匹配到的都会应用该 sidebar
