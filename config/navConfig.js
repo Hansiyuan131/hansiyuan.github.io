@@ -8,7 +8,7 @@ module.exports = [
         ]
     },
     { 
-        text: 'Blog', items: [
+        text: '全栈', items: [
         {
             text: '后端', items: [
                 {text: 'JavaBlog', link: '/后端/JavaBlog/'},
