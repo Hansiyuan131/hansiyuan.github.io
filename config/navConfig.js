@@ -8,7 +8,7 @@ module.exports = [
         ]
     },
     { 
-        text: '全栈', items: [
+        text: '开发', items: [
         {
             text: '后端', items: [
                 {text: 'JavaBlog', link: '/后端/JavaBlog/'},
@@ -23,16 +23,11 @@ module.exports = [
         }] 
     },
     {
-        text: '人工智能', items: [
-            {
-                text: '爬虫', link: '/Python/爬虫/',
-            },
-            {
-                text: ' ', items: [
-                    { text: '人工智能', link: '/Python/人工智能/' },
-                    { text: '量化分析', link: '/Python/量化分析/' },
-                ]
-            }
+        text: '人工智能',
+         items: [
+                {text: '爬虫', link: '/Python/爬虫/'},
+                { text: '人工智能', link: '/Python/人工智能/' },
+                { text: '量化分析', link: '/Python/量化分析/' }
         ]
     },
     { 
