@@ -22,7 +22,7 @@
     "lodash": "^4.17.20",
     "minimist": "^1.2.5",
     "prismjs": "^1.21.0",
-    "serialize-javascript": "^2.1.2",
+    "serialize-javascript": "^3.1.0",
     "valine": "^1.4.14",
     "websocket-extensions": "^0.1.4"
   }
