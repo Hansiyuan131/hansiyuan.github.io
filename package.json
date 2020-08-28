@@ -1,29 +1,32 @@
 {
+  "name": "hexo-site",
+  "version": "0.0.0",
+  "private": true,
   "scripts": {
-    "docs:dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs",
-    "deploy": "bash deploy.sh",
-    "cname": "bash cname.sh"
+    "build": "hexo generate",
+    "clean": "hexo clean",
+    "deploy": "hexo deploy",
+    "server": "hexo server"
   },
-  "devDependencies": {
-    "@vuepress/plugin-active-header-links": "^1.5.2",
-    "@vuepress/plugin-back-to-top": "^1.5.2",
-    "@vuepress/plugin-medium-zoom": "^1.5.2",
-    "@vuepress/plugin-pwa": "^1.5.2",
-    "vuepress": "^1.5.2",
-    "vuepress-plugin-autobar": "github:boboidream/vuepress-bar",
-    "vuepress-plugin-image": "^1.0.4",
-    "vuepress-plugin-medium-zoom": "^1.1.8"
+  "hexo": {
+    "version": "5.1.1"
   },
   "dependencies": {
-    "acorn": "^7.3.1",
-    "kind-of": "^6.0.3",
-    "leancloud-storage": "^4.6.1",
-    "lodash": "^4.17.20",
-    "minimist": "^1.2.5",
-    "prismjs": "^1.21.0",
-    "serialize-javascript": "^3.1.0",
-    "valine": "^1.4.14",
-    "websocket-extensions": "^0.1.4"
+    "hexo": "^5.0.0",
+    "hexo-deployer-git": "^2.1.0",
+    "hexo-filter-github-emojis": "^2.1.0",
+    "hexo-generator-archive": "^1.0.0",
+    "hexo-generator-category": "^1.0.0",
+    "hexo-generator-feed": "^3.0.0",
+    "hexo-generator-index": "^2.0.0",
+    "hexo-generator-search": "^2.4.0",
+    "hexo-generator-tag": "^1.0.0",
+    "hexo-permalink-pinyin": "^1.1.0",
+    "hexo-prism-plugin": "^2.3.0",
+    "hexo-renderer-ejs": "^1.0.0",
+    "hexo-renderer-marked": "^3.0.0",
+    "hexo-renderer-stylus": "^2.0.0",
+    "hexo-server": "^2.0.0",
+    "hexo-wordcount": "^6.0.1"
   }
 }
