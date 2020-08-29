@@ -3,11 +3,11 @@
   <title>韩思远的博客</title>
   
   
-  <link href="https://hansiyuan131.github.io/blog/atom.xml" rel="self"/>
+  <link href="https://hansiyuan131.github.io/atom.xml" rel="self"/>
   
-  <link href="https://hansiyuan131.github.io/blog/"/>
+  <link href="https://hansiyuan131.github.io/"/>
   <updated>2020-08-28T08:37:52.958Z</updated>
-  <id>https://hansiyuan131.github.io/blog/</id>
+  <id>https://hansiyuan131.github.io/</id>
   
   <author>
     <name>韩思远</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>article title</title>
-    <link href="https://hansiyuan131.github.io/blog/2020/08/28/article-title/"/>
-    <id>https://hansiyuan131.github.io/blog/2020/08/28/article-title/</id>
+    <link href="https://hansiyuan131.github.io/2020/08/28/article-title/"/>
+    <id>https://hansiyuan131.github.io/2020/08/28/article-title/</id>
     <published>2020-08-28T08:37:52.000Z</published>
     <updated>2020-08-28T08:37:52.958Z</updated>
     
@@ -43,8 +43,8 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="https://hansiyuan131.github.io/blog/2020/08/28/hello-world/"/>
-    <id>https://hansiyuan131.github.io/blog/2020/08/28/hello-world/</id>
+    <link href="https://hansiyuan131.github.io/2020/08/28/hello-world/"/>
+    <id>https://hansiyuan131.github.io/2020/08/28/hello-world/</id>
     <published>2020-08-28T06:44:24.177Z</published>
     <updated>2020-08-28T06:44:24.177Z</updated>
     
