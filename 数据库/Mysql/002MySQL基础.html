@@ -1,0 +1,1043 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>MySQL基础 | 7Tree技术栈</title>
+    <meta name="generator" content="VuePress 1.5.2">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="icon" href="/favicon-32x32.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="description" content="Talk is cheap. Show me the code">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="preload" href="/assets/css/0.styles.9983b828.css" as="style"><link rel="preload" href="/assets/js/app.d214fd8d.js" as="script"><link rel="preload" href="/assets/js/2.cb1efa29.js" as="script"><link rel="preload" href="/assets/js/35.15df2c18.js" as="script"><link rel="preload" href="/assets/js/6.180eae89.js" as="script"><link rel="preload" href="/assets/js/3.86630006.js" as="script"><link rel="prefetch" href="/assets/js/10.da01beaf.js"><link rel="prefetch" href="/assets/js/11.60832861.js"><link rel="prefetch" href="/assets/js/12.46b7f824.js"><link rel="prefetch" href="/assets/js/13.c05dbbd3.js"><link rel="prefetch" href="/assets/js/14.0849ab08.js"><link rel="prefetch" href="/assets/js/15.0260603f.js"><link rel="prefetch" href="/assets/js/16.b5ce1d69.js"><link rel="prefetch" href="/assets/js/17.ee70ad0f.js"><link rel="prefetch" href="/assets/js/18.9fb72237.js"><link rel="prefetch" href="/assets/js/19.197e4423.js"><link rel="prefetch" href="/assets/js/20.b7bab479.js"><link rel="prefetch" href="/assets/js/21.631097a2.js"><link rel="prefetch" href="/assets/js/22.588f1f99.js"><link rel="prefetch" href="/assets/js/23.f7db75a2.js"><link rel="prefetch" href="/assets/js/24.d0a92f37.js"><link rel="prefetch" href="/assets/js/25.192929e4.js"><link rel="prefetch" href="/assets/js/26.29747567.js"><link rel="prefetch" href="/assets/js/27.6a14665e.js"><link rel="prefetch" href="/assets/js/28.8469c569.js"><link rel="prefetch" href="/assets/js/29.0e598ce7.js"><link rel="prefetch" href="/assets/js/30.f61888cd.js"><link rel="prefetch" href="/assets/js/31.64af9460.js"><link rel="prefetch" href="/assets/js/32.dc7e7034.js"><link rel="prefetch" href="/assets/js/33.feb9522f.js"><link rel="prefetch" href="/assets/js/34.596872ca.js"><link rel="prefetch" href="/assets/js/36.ebacaa49.js"><link rel="prefetch" href="/assets/js/37.1c9fe52f.js"><link rel="prefetch" href="/assets/js/38.6438cdde.js"><link rel="prefetch" href="/assets/js/39.9b5993f0.js"><link rel="prefetch" href="/assets/js/4.6c41b86e.js"><link rel="prefetch" href="/assets/js/40.1f56a9ff.js"><link rel="prefetch" href="/assets/js/41.a6cb7f4b.js"><link rel="prefetch" href="/assets/js/42.0eac2a2b.js"><link rel="prefetch" href="/assets/js/43.7996f5e9.js"><link rel="prefetch" href="/assets/js/44.34b76eef.js"><link rel="prefetch" href="/assets/js/45.3cb593b0.js"><link rel="prefetch" href="/assets/js/46.de2ed787.js"><link rel="prefetch" href="/assets/js/47.b1887ae2.js"><link rel="prefetch" href="/assets/js/48.251cb371.js"><link rel="prefetch" href="/assets/js/49.f343c36e.js"><link rel="prefetch" href="/assets/js/5.40452514.js"><link rel="prefetch" href="/assets/js/50.17564016.js"><link rel="prefetch" href="/assets/js/51.d080457d.js"><link rel="prefetch" href="/assets/js/52.512ded93.js"><link rel="prefetch" href="/assets/js/53.86243de8.js"><link rel="prefetch" href="/assets/js/54.2767f2c2.js"><link rel="prefetch" href="/assets/js/55.91793e75.js"><link rel="prefetch" href="/assets/js/56.b4c5bebd.js"><link rel="prefetch" href="/assets/js/57.f20ec28d.js"><link rel="prefetch" href="/assets/js/58.e6079be9.js"><link rel="prefetch" href="/assets/js/7.4d402272.js"><link rel="prefetch" href="/assets/js/8.2f37510a.js"><link rel="prefetch" href="/assets/js/9.09359b4b.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.9983b828.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/images/icons/icon-72x72.png" alt="7Tree技术栈" class="logo"> <span class="site-name can-hide">7Tree技术栈</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="项目" class="dropdown-title"><span class="title">项目</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/项目/iMall/" class="nav-link">
+  iMall
+</a></li><li class="dropdown-item"><!----> <a href="/项目/sn-reader/" class="nav-link">
+  sn-reader
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="开发" class="dropdown-title"><span class="title">开发</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          后端
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/后端/JavaBlog/" class="nav-link">
+  JavaBlog
+</a></li><li class="dropdown-subitem"><a href="/后端/NetBlog/" class="nav-link">
+  NetBlog
+</a></li></ul></li><li class="dropdown-item"><h4>
+          前端
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/前端/Vue/" class="nav-link">
+  VueBlog
+</a></li><li class="dropdown-subitem"><a href="/前端/React/" class="nav-link">
+  ReactBlog
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="人工智能" class="dropdown-title"><span class="title">人工智能</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Python/爬虫/" class="nav-link">
+  爬虫
+</a></li><li class="dropdown-item"><!----> <a href="/Python/人工智能/" class="nav-link">
+  人工智能
+</a></li><li class="dropdown-item"><!----> <a href="/Python/量化分析/" class="nav-link">
+  量化分析
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="算法" class="dropdown-title"><span class="title">算法</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          基础
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/算法/算法基础/" class="nav-link">
+  数据结构+算法
+</a></li></ul></li><li class="dropdown-item"><h4>
+          练习
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/算法/LeetCode/" class="nav-link">
+  LeetCode
+</a></li><li class="dropdown-subitem"><a href="/算法/剑指Offer/" class="nav-link">
+  剑指Offer
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="数据库" class="dropdown-title"><span class="title">数据库</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/数据库/Mysql/" class="nav-link">
+  Mysql
+</a></li><li class="dropdown-item"><!----> <a href="/数据库/SQLServer/" class="nav-link">
+  SQLServer
+</a></li><li class="dropdown-item"><!----> <a href="/数据库/Redis/" class="nav-link">
+  Redis
+</a></li><li class="dropdown-item"><!----> <a href="/数据库/MongoDB/" class="nav-link">
+  MongoDB
+</a></li></ul></div></div><div class="nav-item"><a href="/DevOps/" class="nav-link">
+  DevOps
+</a></div><div class="nav-item"><a href="/每月小记/" class="nav-link">
+  每月小记
+</a></div><div class="nav-item"><a href="/关于我/" class="nav-link">
+  关于我
+</a></div><div class="nav-item"><a href="/读书/" class="nav-link">
+  读书
+</a></div><div class="nav-item"><a href="/常用导航/" class="nav-link">
+  常用导航
+</a></div><div class="nav-item"><a href="/其他/" class="nav-link">
+  其他
+</a></div> <a href="https://github.com/Hansiyuan131/hansiyuan131.github.io" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="项目" class="dropdown-title"><span class="title">项目</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/项目/iMall/" class="nav-link">
+  iMall
+</a></li><li class="dropdown-item"><!----> <a href="/项目/sn-reader/" class="nav-link">
+  sn-reader
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="开发" class="dropdown-title"><span class="title">开发</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          后端
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/后端/JavaBlog/" class="nav-link">
+  JavaBlog
+</a></li><li class="dropdown-subitem"><a href="/后端/NetBlog/" class="nav-link">
+  NetBlog
+</a></li></ul></li><li class="dropdown-item"><h4>
+          前端
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/前端/Vue/" class="nav-link">
+  VueBlog
+</a></li><li class="dropdown-subitem"><a href="/前端/React/" class="nav-link">
+  ReactBlog
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="人工智能" class="dropdown-title"><span class="title">人工智能</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Python/爬虫/" class="nav-link">
+  爬虫
+</a></li><li class="dropdown-item"><!----> <a href="/Python/人工智能/" class="nav-link">
+  人工智能
+</a></li><li class="dropdown-item"><!----> <a href="/Python/量化分析/" class="nav-link">
+  量化分析
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="算法" class="dropdown-title"><span class="title">算法</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          基础
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/算法/算法基础/" class="nav-link">
+  数据结构+算法
+</a></li></ul></li><li class="dropdown-item"><h4>
+          练习
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/算法/LeetCode/" class="nav-link">
+  LeetCode
+</a></li><li class="dropdown-subitem"><a href="/算法/剑指Offer/" class="nav-link">
+  剑指Offer
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="数据库" class="dropdown-title"><span class="title">数据库</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/数据库/Mysql/" class="nav-link">
+  Mysql
+</a></li><li class="dropdown-item"><!----> <a href="/数据库/SQLServer/" class="nav-link">
+  SQLServer
+</a></li><li class="dropdown-item"><!----> <a href="/数据库/Redis/" class="nav-link">
+  Redis
+</a></li><li class="dropdown-item"><!----> <a href="/数据库/MongoDB/" class="nav-link">
+  MongoDB
+</a></li></ul></div></div><div class="nav-item"><a href="/DevOps/" class="nav-link">
+  DevOps
+</a></div><div class="nav-item"><a href="/每月小记/" class="nav-link">
+  每月小记
+</a></div><div class="nav-item"><a href="/关于我/" class="nav-link">
+  关于我
+</a></div><div class="nav-item"><a href="/读书/" class="nav-link">
+  读书
+</a></div><div class="nav-item"><a href="/常用导航/" class="nav-link">
+  常用导航
+</a></div><div class="nav-item"><a href="/其他/" class="nav-link">
+  其他
+</a></div> <a href="https://github.com/Hansiyuan131/hansiyuan131.github.io" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Mysql</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/%E6%95%B0%E6%8D%AE%E5%BA%93/Mysql/" aria-current="page" class="sidebar-link">Mysql 相关笔记记录</a></li><li><a href="/数据库/Mysql/001Mysql安装.html" class="sidebar-link">MySQL Install</a></li><li><a href="/数据库/Mysql/002MySQL基础.html" class="active sidebar-link">MySQL基础</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/数据库/Mysql/002MySQL基础.html#初识mysql" class="sidebar-link">初识Mysql</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/数据库/Mysql/002MySQL基础.html#mysql的分类" class="sidebar-link">Mysql的分类</a></li><li class="sidebar-sub-header"><a href="/数据库/Mysql/002MySQL基础.html#基本语法" class="sidebar-link">基本语法</a></li></ul></li><li class="sidebar-sub-header"><a href="/数据库/Mysql/002MySQL基础.html#sql" class="sidebar-link">SQL</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/数据库/Mysql/002MySQL基础.html#ddl" class="sidebar-link">DDL</a></li><li class="sidebar-sub-header"><a href="/数据库/Mysql/002MySQL基础.html#dml" class="sidebar-link">DML</a></li><li class="sidebar-sub-header"><a href="/数据库/Mysql/002MySQL基础.html#dql" class="sidebar-link">DQL</a></li><li class="sidebar-sub-header"><a href="/数据库/Mysql/002MySQL基础.html#dtl" class="sidebar-link">DTL</a></li><li class="sidebar-sub-header"><a href="/数据库/Mysql/002MySQL基础.html#dcl" class="sidebar-link">DCL</a></li></ul></li><li class="sidebar-sub-header"><a href="/数据库/Mysql/002MySQL基础.html#数据类型" class="sidebar-link">数据类型</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/数据库/Mysql/002MySQL基础.html#text-types" class="sidebar-link">Text types</a></li><li class="sidebar-sub-header"><a href="/数据库/Mysql/002MySQL基础.html#number-types" class="sidebar-link">Number types</a></li><li class="sidebar-sub-header"><a href="/数据库/Mysql/002MySQL基础.html#date-types" class="sidebar-link">Date types</a></li></ul></li><li class="sidebar-sub-header"><a href="/数据库/Mysql/002MySQL基础.html#sql函数" class="sidebar-link">SQL函数</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/数据库/Mysql/002MySQL基础.html#聚合函数" class="sidebar-link">聚合函数</a></li><li class="sidebar-sub-header"><a href="/数据库/Mysql/002MySQL基础.html#标量函数" class="sidebar-link">标量函数</a></li></ul></li><li class="sidebar-sub-header"><a href="/数据库/Mysql/002MySQL基础.html#数据库设计" class="sidebar-link">数据库设计</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/数据库/Mysql/002MySQL基础.html#数据库的设计-范式" class="sidebar-link">数据库的设计 - 范式</a></li><li class="sidebar-sub-header"><a href="/数据库/Mysql/002MySQL基础.html#电商网站" class="sidebar-link">电商网站</a></li><li class="sidebar-sub-header"><a href="/数据库/Mysql/002MySQL基础.html#春游报名系统" class="sidebar-link">春游报名系统</a></li></ul></li><li class="sidebar-sub-header"><a href="/数据库/Mysql/002MySQL基础.html#索引的使用" class="sidebar-link">索引的使用</a></li><li class="sidebar-sub-header"><a href="/数据库/Mysql/002MySQL基础.html#实战" class="sidebar-link">实战</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/数据库/Mysql/002MySQL基础.html#ip" class="sidebar-link">IP</a></li><li class="sidebar-sub-header"><a href="/数据库/Mysql/002MySQL基础.html#user" class="sidebar-link">User</a></li></ul></li><li class="sidebar-sub-header"><a href="/数据库/Mysql/002MySQL基础.html#sql语句练习" class="sidebar-link">SQL语句练习</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/数据库/Mysql/002MySQL基础.html#练习数据库创建" class="sidebar-link">练习数据库创建</a></li><li class="sidebar-sub-header"><a href="/数据库/Mysql/002MySQL基础.html#练习题-一" class="sidebar-link">练习题(一)</a></li><li class="sidebar-sub-header"><a href="/数据库/Mysql/002MySQL基础.html#练习题-二" class="sidebar-link">练习题(二)</a></li></ul></li></ul></li><li><a href="/数据库/Mysql/003MySQL数据库设计实战.html" class="sidebar-link">MySQL数据库设计实战</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="mysql基础"><a href="#mysql基础" class="header-anchor">#</a> MySQL基础</h1> <h2 id="初识mysql"><a href="#初识mysql" class="header-anchor">#</a> 初识Mysql</h2> <blockquote><p>SQL 命令式语言 第四代语言</p></blockquote> <h3 id="mysql的分类"><a href="#mysql的分类" class="header-anchor">#</a> Mysql的分类</h3> <ul><li>DDL（Data Definition Language）
+<ul><li>数据定义语句，这些语句定义了不同的数据段、数据库、表、列、索引等数据库对象的定义。常用的语句关键字主要包括create、drop、alter等。</li></ul></li> <li>DML（Data Manipulation Language）
+<ul><li>数据操纵语句，用于添加、删除、更新和查询数据库记录，并检查数据完整性，常用的语句关键字主要包括insert、delete、udpate和select等。</li></ul></li> <li>DCL（Data Control Language）
+<ul><li>数据控制语句，用于控制不同数据段直接的许可和访问级别的语句。这些语句定义了数据库、表、字段、用户的访问权限和安全级别。主要的语句关键字包括grant、revoke等</li></ul></li></ul> <h3 id="基本语法"><a href="#基本语法" class="header-anchor">#</a> 基本语法</h3> <div class="language-mysql extra-class"><pre class="language-text"><code>-- sql 语句
+select * from table_name
+</code></pre></div><ol><li>SQL 关键字不区分大小写</li> <li>分号 ; 是区分语句的标志</li> <li>MySQL 注释</li></ol> <div class="language-mysql extra-class"><pre class="language-text"><code># This comment continues to the end of line
+-- This comment continues to the end of line
+
+/* this is an in-line comment */
+
+/*
+this is a
+multiple-line comment
+*/
+
+</code></pre></div><ol start="4"><li>推荐使用完全限定表(数据库.表名的格式)</li> <li>常用的 SQL 语句</li></ol> <div class="language-mysql extra-class"><pre class="language-text"><code>SELECT - extracts data from a database
+UPDATE - updates data in a database
+DELETE - deletes data from a database
+INSERT INTO - inserts new data into a database
+CREATE DATABASE - creates a new database
+ALTER DATABASE - modifies a database
+DROP DATABASE - deletes a database
+CREATE TABLE - creates a new table
+ALTER TABLE - modifies a table
+DROP TABLE - deletes a table
+CREATE INDEX - creates an index (search key)
+DROP INDEX - deletes an index
+</code></pre></div><hr> <h2 id="sql"><a href="#sql" class="header-anchor">#</a> SQL</h2> <h3 id="ddl"><a href="#ddl" class="header-anchor">#</a> DDL</h3> <h4 id="常用-基本了解"><a href="#常用-基本了解" class="header-anchor">#</a> 常用+基本了解</h4> <p>关键字：</p> <ul><li><code>create</code></li> <li><code>alert</code></li> <li><code>drop</code></li></ul> <p>数据类型：</p> <ul><li><code>text</code> 文本类型
+<ul><li><code>char</code> 定长类型</li> <li><code>varchar</code> 可边长类型</li> <li><code>Text</code></li> <li><code>LongText</code></li> <li><code>BloB</code> 存储二进制数据</li> <li><code>LongBolB</code></li></ul></li> <li><code>number</code> 数值类型
+<ul><li><code>int(sIZE)</code> 整型 size表示位数</li> <li><code>BIGINT</code> 长整型</li> <li><code>double（3，2）</code> 小数  共三位小数点后占两位，整数位占一位</li> <li><code>dicamal</code> 跟金钱有关的</li></ul></li> <li><code>Date/Time</code> 时间类型
+<ul><li><code>Date</code>  YYYY-MM-DD</li> <li><code>DateTime</code> YYYY-MM-DD HH:MI:SS</li></ul></li></ul> <h4 id="create"><a href="#create" class="header-anchor">#</a> Create</h4> <h5 id="create-db"><a href="#create-db" class="header-anchor">#</a> Create DB</h5> <div class="language-mysql extra-class"><pre class="language-text"><code>create database database_name
+</code></pre></div><h5 id="create-table"><a href="#create-table" class="header-anchor">#</a> Create Table</h5> <div class="language-mysql extra-class"><pre class="language-text"><code>create table table_name(
+-- 字段名 字段名 数据类型 [数据范围] [约束] 注释
+) comment '表描述'
+</code></pre></div><h4 id="drop"><a href="#drop" class="header-anchor">#</a> Drop</h4> <p>Drop database</p> <div class="language-mysql extra-class"><pre class="language-text"><code>DROP DATABASE database_name;
+</code></pre></div><h5 id="drop-table"><a href="#drop-table" class="header-anchor">#</a> Drop table</h5> <div class="language-mysql extra-class"><pre class="language-text"><code>DROP TABLE table_name;
+</code></pre></div><h5 id="drop-index-in-mysql"><a href="#drop-index-in-mysql" class="header-anchor">#</a> Drop index in MySQL</h5> <div class="language-mysql extra-class"><pre class="language-text"><code>ALTER TABLE table_name DROP INDEX index_name;
+</code></pre></div><h5 id="truncate-table"><a href="#truncate-table" class="header-anchor">#</a> Truncate table</h5> <div class="language-mysql extra-class"><pre class="language-text"><code>TRUNCATE TABLE table_name;
+-- Truncate是一个能够快速清空资料表内所有资料的SQL语法。 并且能针对具有自动递增值的字段，做计数重置归零重新计算的作用。
+</code></pre></div><h4 id="constraints"><a href="#constraints" class="header-anchor">#</a> Constraints</h4> <h5 id="非空约束-not-null"><a href="#非空约束-not-null" class="header-anchor">#</a> 非空约束 Not null</h5> <div class="language-mysql extra-class"><pre class="language-text"><code>CREATE TABLE PersonsNotNull (
+P_Id int NOT NULL,
+LastName varchar(255) NOT NULL,
+FirstName varchar(255),
+City varchar(255)
+);
+</code></pre></div><h5 id="唯一约束-unique"><a href="#唯一约束-unique" class="header-anchor">#</a> 唯一约束 Unique</h5> <div class="language-mysql extra-class"><pre class="language-text"><code>CREATE TABLE Persons (
+P_Id int NOT NULL,
+LastName varchar(255) NOT NULL,
+FirstName varchar(255),
+City varchar(255),
+CONSTRAINT uc_PersonID UNIQUE (P_Id,LastName)
+);
+</code></pre></div><h5 id="主键约束-primary-key"><a href="#主键约束-primary-key" class="header-anchor">#</a> 主键约束 Primary Key</h5> <div class="language-mysql extra-class"><pre class="language-text"><code>CREATE TABLE table_name (
+id INT AUTO_INCREMENT PRIMARY KEY,
+);
+</code></pre></div><div class="language-mysql extra-class"><pre class="language-text"><code>CREATE TABLE Persons (
+P_Id int NOT NULL,
+LastName varchar(255) NOT NULL,
+FirstName varchar(255),
+PRIMARY KEY (P_Id)
+);
+</code></pre></div><h5 id="外键约束-foreign-key"><a href="#外键约束-foreign-key" class="header-anchor">#</a> 外键约束 Foreign Key</h5> <ul><li>主表 / 父表（主键所在的表）</li> <li>从表 / 子表（外键所在的表）</li> <li>必须引用主表主键</li> <li>外键和主键数据类型一致</li></ul> <h5 id="创建外键"><a href="#创建外键" class="header-anchor">#</a> 创建外键</h5> <div class="language-mysql extra-class"><pre class="language-text"><code>alter table db_a.enroll
+  add constraint
+    enroll_fk_activityId
+    foreign key (activityId)
+      references db_a.activity (id);
+</code></pre></div><h5 id="暂时禁用外键约束"><a href="#暂时禁用外键约束" class="header-anchor">#</a> 暂时禁用外键约束</h5> <div class="language-mysql extra-class"><pre class="language-text"><code>-- Try DISABLE KEYS:
+SET FOREIGN_KEY_CHECKS=0;
+
+-- make sure to
+SET FOREIGN_KEY_CHECKS=1;
+</code></pre></div><h5 id="缺省值-default"><a href="#缺省值-default" class="header-anchor">#</a> 缺省值 Default</h5> <div class="language-mysql extra-class"><pre class="language-text"><code>CREATE TABLE Persons (
+P_Id int NOT NULL,
+LastName varchar(255) NOT NULL,
+City varchar(255) DEFAULT 'Sandnes'
+)
+</code></pre></div><h5 id="自增-auto-increment"><a href="#自增-auto-increment" class="header-anchor">#</a> 自增 Auto Increment</h5> <div class="language-mysql extra-class"><pre class="language-text"><code>CREATE TABLE Persons (
+ID int NOT NULL UNSIGNED AUTO_INCREMENT,
+PRIMARY KEY (ID)
+);
+
+ALTER TABLE Persons AUTO_INCREMENT = 100;
+</code></pre></div><h4 id="alter"><a href="#alter" class="header-anchor">#</a> Alter</h4> <h5 id="rename"><a href="#rename" class="header-anchor">#</a> Rename</h5> <div class="language-mysql extra-class"><pre class="language-text"><code>ALTER TABLE old_table_name RENAME new_table_name;
+</code></pre></div><h5 id="add-column"><a href="#add-column" class="header-anchor">#</a> ADD COLUMN</h5> <div class="language-mysql extra-class"><pre class="language-text"><code>ALTER TABLE table_name
+ADD COLUMN column_name datatype [AFTER column_name | FIRST];
+</code></pre></div><h5 id="drop-column"><a href="#drop-column" class="header-anchor">#</a> DROP COLUMN</h5> <div class="language-mysql extra-class"><pre class="language-text"><code>ALTER TABLE table_name
+DROP COLUMN column_name;
+</code></pre></div><h5 id="modify-column"><a href="#modify-column" class="header-anchor">#</a> MODIFY COLUMN</h5> <div class="language-mysql extra-class"><pre class="language-text"><code>ALTER TABLE table_name
+MODIFY COLUMN column_name datatype [AFTER column_name | FIRST];
+</code></pre></div><h5 id="add-constraint-primary-key"><a href="#add-constraint-primary-key" class="header-anchor">#</a> ADD CONSTRAINT PRIMARY KEY</h5> <div class="language-mysql extra-class"><pre class="language-text"><code>ALTER TABLE table_name
+ADD CONSTRAINT primary_key_name PRIMARY KEY(columns);
+</code></pre></div><h5 id="change"><a href="#change" class="header-anchor">#</a> CHANGE</h5> <div class="language-msyql extra-class"><pre class="language-text"><code>ALTER TABLE table_name
+CHANGE old_column_name new_column_name datatype [AFTER column_name |
+FIRST];
+</code></pre></div><h5 id="add-constraint-foreign-key"><a href="#add-constraint-foreign-key" class="header-anchor">#</a> ADD CONSTRAINT FOREIGN KEY</h5> <div class="language-mysq; extra-class"><pre class="language-text"><code>ALTER TABLE table_name
+ADD CONSTRAINT
+foreign_key_name
+FOREIGN KEY (columns)
+REFERENCES parent_table(columns)
+ON DELETE action
+ON UPDATE action;
+
+
+#       on delete cascade; -- 级联删除
+#       on delete set null ; -- 级联置空
+</code></pre></div><h5 id="drop-foreign-key"><a href="#drop-foreign-key" class="header-anchor">#</a> DROP FOREIGN KEY</h5> <div class="language-mysql extra-class"><pre class="language-text"><code>ALTER TABLE table_name
+DROP FOREIGN KEY constraint_name;
+</code></pre></div><h5 id="drop-index"><a href="#drop-index" class="header-anchor">#</a> DROP INDEX</h5> <div class="language-mysql extra-class"><pre class="language-text"><code>ALTER TABLE table_name DROP INDEX unique_column_name;
+</code></pre></div><h5 id="ignore"><a href="#ignore" class="header-anchor">#</a> IGNORE</h5> <div class="language-mysql extra-class"><pre class="language-text"><code>-- Delete all duplicated rows except one
+ALTER IGNORE TABLE table_name
+ADD UNIQUE INDEX idx_name (column);
+</code></pre></div><div class="language-mysql extra-class"><pre class="language-text"><code>-- If you want to keep the row with the lowest id value:
+DELETE n1 FROM names n1, names n2 WHERE n1.id &gt; n2.id AND n1.name = n2.name;
+-- If you want to keep the row with the highest id value:
+DELETE n1 FROM names n1, names n2 WHERE n1.id &lt; n2.id AND n1.name = n2.name;
+</code></pre></div><h4 id="index"><a href="#index" class="header-anchor">#</a> Index</h4> <h5 id="create-index"><a href="#create-index" class="header-anchor">#</a> CREATE INDEX</h5> <div class="language-mysql extra-class"><pre class="language-text"><code>CREATE INDEX idx_name ON table_name(column);
+</code></pre></div><h5 id="drop-index-2"><a href="#drop-index-2" class="header-anchor">#</a> DROP INDEX</h5> <div class="language-mysql extra-class"><pre class="language-text"><code>DROP INDEX idx_name ON table_name;
+</code></pre></div><h5 id="show-index"><a href="#show-index" class="header-anchor">#</a> SHOW INDEX</h5> <div class="language-mysql extra-class"><pre class="language-text"><code>SHOW INDEX FROM table_name;
+</code></pre></div><ul><li>primary key &gt; index</li> <li>unique &gt; index</li> <li>foreign key &gt; index (only for InnoDB)</li></ul> <p>Does MySQL index foreign key columns automatically?</p> <ul><li>单列索引 todo</li> <li>组合索引 todo</li></ul> <hr> <h3 id="dml"><a href="#dml" class="header-anchor">#</a> DML</h3> <blockquote><p>语句(Data Manipulate Language)</p></blockquote> <h4 id="insert"><a href="#insert" class="header-anchor">#</a> Insert</h4> <div class="language-mysql extra-class"><pre class="language-text"><code>INSERT INTO table_name
+VALUES (value1,value2,value3,...);
+</code></pre></div><div class="language-mysql extra-class"><pre class="language-text"><code>INSERT INTO table_name (column1,column2,column3,...)
+VALUES (value1,value2,value3,...);
+</code></pre></div><h4 id="update"><a href="#update" class="header-anchor">#</a> Update</h4> <div class="language-mysql extra-class"><pre class="language-text"><code>UPDATE table_name
+SET column1=value1,column2=value2,...
+WHERE some_column=some_value;
+</code></pre></div><h4 id="delete"><a href="#delete" class="header-anchor">#</a> Delete</h4> <div class="language-mysql extra-class"><pre class="language-text"><code>DELETE FROM table_name
+WHERE some_column=some_value;
+</code></pre></div><h4 id="import"><a href="#import" class="header-anchor">#</a> import</h4> <div class="language-mysql extra-class"><pre class="language-text"><code>mysql&gt; source file_name.sql
+</code></pre></div><h4 id="load-导入"><a href="#load-导入" class="header-anchor">#</a> load 导入</h4> <div class="language-mysql extra-class"><pre class="language-text"><code>LOAD DATA LOCAL INFILE 'path_to_your_csv_file'
+INTO TABLE your_db.your_table
+FIELDS TERMINATED BY ',' (column_name1, column_name2, ...)
+SET id = NULL;
+</code></pre></div><h4 id="dump-备份"><a href="#dump-备份" class="header-anchor">#</a> dump 备份</h4> <div class="language-mysql extra-class"><pre class="language-text"><code>-- your_mysql_directory/bin
+mysqldump -B -u your_mysql_username -p database_name &gt; file_name.sql
+</code></pre></div><hr> <h3 id="dql"><a href="#dql" class="header-anchor">#</a> DQL</h3> <blockquote><p>语句(Data Query Language)</p></blockquote> <h4 id="mysql-show"><a href="#mysql-show" class="header-anchor">#</a> MySQL Show</h4> <ul><li>SHOW DATABASES; 显示服务器中所有的库</li> <li>SHOW TABLES; 显示库中所有的表</li> <li>SHOW TABLE STATUS FROM database_name; 显示库中所有表的信息</li> <li>SHOW TABLE STATUS WHERE Name = ‘table_name’; 显示表的信息</li> <li>SHOW [FULL] COLUMNS FROM table_name; 显示表中所有列的信息</li> <li>SHOW TABLE STATUS WHERE Name = ‘table_name’; 显示表的信息</li> <li>SHOW FULL TABLES FROM database_name; 显示库中的表和视图</li> <li>SHOW VARIABLES; 显示变量</li> <li>SHOW CREATE TABLE table_name; 显示建表语句</li> <li>SHOW CREATE VIEW view_name; 显示建视图语句</li> <li>SHOW INDEX FROM table_name; 显示表中索引信息</li></ul> <h4 id="select"><a href="#select" class="header-anchor">#</a> Select</h4> <div class="language-mysql extra-class"><pre class="language-text"><code>SELECT column_name,column_name
+FROM table_name;
+</code></pre></div><h4 id="distinct"><a href="#distinct" class="header-anchor">#</a> distinct</h4> <div class="language-mysql extra-class"><pre class="language-text"><code>SELECT DISTINCT column_name,column_name
+FROM table_name;
+</code></pre></div><h4 id="where"><a href="#where" class="header-anchor">#</a> where</h4> <div class="language-mysql extra-class"><pre class="language-text"><code>SELECT column_name,column_name
+FROM table_name
+WHERE column_name operator value;
+</code></pre></div><h4 id="and-or"><a href="#and-or" class="header-anchor">#</a> AND &amp; OR</h4> <div class="language-mysql extra-class"><pre class="language-text"><code>SELECT * FROM Customers
+WHERE Country='Germany'
+AND City='Berlin';
+</code></pre></div><div class="language-mysql extra-class"><pre class="language-text"><code>SELECT * FROM Customers
+WHERE City='Berlin'
+OR City='München';
+</code></pre></div><div class="language-mysql extra-class"><pre class="language-text"><code>SELECT * FROM Customers
+WHERE Country='Germany'
+AND (City='Berlin' OR City='München');
+</code></pre></div><h4 id="order-by"><a href="#order-by" class="header-anchor">#</a> Order By</h4> <div class="language-mysql extra-class"><pre class="language-text"><code>SELECT column_name1, column_name2
+FROM table_name
+ORDER BY column_name1 ASC|DESC, column_name2 ASC|DESC;
+-- ORDER BY 1, 2
+</code></pre></div><h4 id="top-limit"><a href="#top-limit" class="header-anchor">#</a> Top limit</h4> <div class="language-mysql extra-class"><pre class="language-text"><code>SELECT column_name(s)
+FROM table_name
+LIMIT number1 OFFSET number2;
+-- LIMIT number2, number1
+</code></pre></div><ul><li>LIMIT 位于 ORDER BY 之后</li></ul> <h4 id="like"><a href="#like" class="header-anchor">#</a> Like</h4> <div class="language-mysql extra-class"><pre class="language-text"><code>SELECT column_name(s)
+FROM table_name
+WHERE column_name [NOT] LIKE pattern;
+</code></pre></div><div class="language-mysql extra-class"><pre class="language-text"><code>CREATE TABLE table_name_new LIKE table_name
+</code></pre></div><hr> <h3 id="dtl"><a href="#dtl" class="header-anchor">#</a> DTL</h3> <blockquote><p>(Data Transaction Language)</p> <p>在数据库系统中，一个事务是指：由一系列数据库操作组成的一个完整的逻辑过程</p></blockquote> <h4 id="事务的-acid-特性"><a href="#事务的-acid-特性" class="header-anchor">#</a> 事务的 ACID 特性</h4> <h5 id="原子性-atomicity"><a href="#原子性-atomicity" class="header-anchor">#</a> 原子性 Atomicity</h5> <p>一个事务 transaction 中的所有操作，要么全部完成，要么全部不完成，不会结束在中间某个环节</p> <h5 id="一致性-consistency"><a href="#一致性-consistency" class="header-anchor">#</a> 一致性 Consistency</h5> <p>在事务开始之前和事务结束以后，数据库的完整性没有被破坏</p> <h5 id="隔离性-isolation"><a href="#隔离性-isolation" class="header-anchor">#</a> 隔离性 Isolation</h5> <p>数据库允许多个并发事务对其数据进行读写和修改的能力，隔离性可以防止多个事务并发执行时由于交叉执行而导致数据的不一致</p> <h5 id="持久性-durability"><a href="#持久性-durability" class="header-anchor">#</a> 持久性 Durability</h5> <p>事务处理结束后，对数据的修改就是永久的，即便系统故障也不会丢失</p> <h4 id="开启一次事务"><a href="#开启一次事务" class="header-anchor">#</a> 开启一次事务</h4> <div class="language-mysql extra-class"><pre class="language-text"><code>START TRANSACTION;
+</code></pre></div><h4 id="事务处理语句"><a href="#事务处理语句" class="header-anchor">#</a> 事务处理语句</h4> <ul><li>DML 语句 insert update delete</li> <li>DQL 语句与事务无关</li></ul> <h4 id="显式结束事务"><a href="#显式结束事务" class="header-anchor">#</a> 显式结束事务</h4> <ul><li>COMMIT; 提交</li> <li>ROLLBACK; 回滚</li></ul> <h4 id="隐式结束事务"><a href="#隐式结束事务" class="header-anchor">#</a> 隐式结束事务</h4> <ul><li>DDL 语句</li></ul> <h4 id="事务保留点"><a href="#事务保留点" class="header-anchor">#</a> 事务保留点</h4> <div class="language-mysql extra-class"><pre class="language-text"><code>SAVEPOINT save_point_name; -- 设置保留点
+ROLLBACK TO save_point_name; -- 回滚到保留点，不能结束事务
+SET AUTOCOMMIT = 0;
+SET AUTOCOMMIT = 1;
+</code></pre></div><hr> <h3 id="dcl"><a href="#dcl" class="header-anchor">#</a> DCL</h3> <blockquote><p>(Data Control Language)</p></blockquote> <h4 id="创建用户"><a href="#创建用户" class="header-anchor">#</a> 创建用户</h4> <div class="language-mysql extra-class"><pre class="language-text"><code>-- 创建用户
+CREATE USER your_username@'localhost' IDENTIFIED BY 'some_password';
+-- 改用户名
+RENAME USER your_username@'localhost' TO new_your_username@'localhos
+t';
+-- 更改密码
+SET PASSWORD [FOR your_username] = PASSWORD('new_your_password');
+-- 删除用户
+DROP USER your_username;
+</code></pre></div><h4 id="权限"><a href="#权限" class="header-anchor">#</a> 权限</h4> <div class="language-mysql extra-class"><pre class="language-text"><code>-- 显示权限信息
+SHOW GRANTS FOR your_username@'localhost';
+-- 授予权限
+GRANT some_privileges ON some_databases(some_tables) TO some_users@'l
+ocalhost';
+-- 撤销权限
+REVOKE some_privileges ON some_databases(some_tables) FROM some_users
+@'localhost';
+-- 刷新权限
+FLUSH PRIVILEGES;
+-- 权限粒度
+GRANT ALL
+REVOKE ALL
+ON database_name.*
+ON database_name.table_name
+</code></pre></div><hr> <h2 id="数据类型"><a href="#数据类型" class="header-anchor">#</a> 数据类型</h2> <p>text, number, and Date/Time</p> <h3 id="text-types"><a href="#text-types" class="header-anchor">#</a> Text types</h3> <table><thead><tr><th>数据类型</th> <th>含义</th></tr></thead> <tbody><tr><td>char(n)</td> <td>固定长度，最多255个字符</td></tr> <tr><td><strong>varchar(n)</strong></td> <td><strong>固定长度，最多65535个字符</strong></td></tr> <tr><td>tinytext</td> <td>可变长度，最多255个字符</td></tr> <tr><td>text</td> <td>可变长度，最多65535个字符</td></tr> <tr><td>mediumtext</td> <td>可变长度，最多2的24次方-1个字符</td></tr> <tr><td>longtext</td> <td>可变长度，最多2的32次方-1个字符</td></tr></tbody></table> <h4 id="char和varchar"><a href="#char和varchar" class="header-anchor">#</a> char和varchar</h4> <ol><li>char(n) 若存入字符数小于n，则以空格补于其后，查询之时再将空格去掉。所以char类型存储的字符串末尾不能有空格，varchar不限于此。</li> <li>char(n) 固定长度，char(4)不管是存入几个字符，都将占用4个字节，varchar是存入的实际字符数+1个字节（n&lt;=255）或2个字节(n&gt;255)，所以varchar(4),存入3个字符将占用4个字节。</li> <li>char类型的字符串检索速度要比varchar类型的快。</li></ol> <h4 id="varchar和text"><a href="#varchar和text" class="header-anchor">#</a> varchar和text</h4> <ol><li>varchar可指定n，text不能指定，内部存储varchar是存入的实际字符数+1个字节（n&lt;=255）或2个字节(n&gt;255)，text是实际字符数+2个字节。</li> <li>text类型不能有默认值。</li> <li>varchar可直接创建索引，text创建索引要指定前多少个字符。varchar查询速度快于text,在都创建索引的情况下，text的索引似乎不起作用。</li></ol> <h3 id="number-types"><a href="#number-types" class="header-anchor">#</a> Number types</h3> <table><thead><tr><th>数据类型</th> <th>描述</th></tr></thead> <tbody><tr><td>tinyint(m)</td> <td>1个字节  范围(-128~127)</td></tr> <tr><td>smallint(m)</td> <td>2个字节  范围(-32768~32767)</td></tr> <tr><td>mediumint(m)</td> <td>3个字节  范围(-8388608~8388607)</td></tr> <tr><td><strong>int(m)</strong></td> <td>4个字节  范围(-2147483648~2147483647)</td></tr> <tr><td>bigint(m)</td> <td>8个字节  范围<code>(+-9.22*10的18次方)</code></td></tr> <tr><td>float(m,d)</td> <td>单精度浮点型    8位精度(4字节)     m总个数，d小数位</td></tr> <tr><td><strong>double(m,d)</strong></td> <td>双精度浮点型    16位精度(8字节)    m总个数，d小数位</td></tr> <tr><td><strong>DECIMAL(size,d)</strong></td> <td>参数m&lt;65 是总个数，d&lt;30且 d&lt;m 是小数位。</td></tr></tbody></table> <blockquote><p>INT(size)
+The size is just the display width, that is used when the field has ZEROFILL specified.</p></blockquote> <ul><li>浮点型在数据库中存放的是近似值，而定点类型在数据库中存放的是精确值。</li> <li>设一个字段定义为float(5,3)，如果插入一个数123.45678,实际数据库里存的是123.457，但总个数还以实际为准，即6位。</li> <li>取值范围如果加了unsigned，则最大值翻倍，如tinyint unsigned的取值范围为(0~256)。</li></ul> <h3 id="date-types"><a href="#date-types" class="header-anchor">#</a> Date types</h3> <table><thead><tr><th>数据类型</th> <th>描述</th></tr></thead> <tbody><tr><td><strong>date</strong></td> <td>日期 '2008-12-2'</td></tr> <tr><td>time</td> <td>时间 '12:25:36'</td></tr> <tr><td><strong>datetime</strong></td> <td>日期时间 '2008-12-2 22:06:44'</td></tr> <tr><td>timestamp</td> <td>自动存储记录修改时间</td></tr></tbody></table> <ul><li>若定义一个字段为timestamp，这个字段里的时间数据会随其他字段修改的时候自动刷新，所以这个数据类型的字段可以存放这条记录最后被修改的时间。</li></ul> <hr> <h2 id="sql函数"><a href="#sql函数" class="header-anchor">#</a> SQL函数</h2> <h3 id="聚合函数"><a href="#聚合函数" class="header-anchor">#</a> 聚合函数</h3> <blockquote><p>Aggregate function</p></blockquote> <ul><li>AVG(col) 返回指定列的平均值</li> <li>COUNT(col) 返回指定列中非NULL值的个数</li> <li>MIN(col) 返回指定列的最小值</li> <li>MAX(col) 返回指定列的最大值</li> <li>SUM(col) 返回指定列的所有值之和</li> <li>GROUP_CONCAT(col) 返回由属于一组的列值连接组合而成的结果</li> <li>FIRST()</li> <li>LAST()</li> <li>SQL Group By 组查询</li> <li>SELECT aggregate_function(column_name)</li> <li>GROUP BY cloumn_name;把 column_name 列值相同的分为一组</li> <li>HAVING 组检索</li></ul> <div class="language-mysql extra-class"><pre class="language-text"><code>GROUP_CONCAT([DISTINCT] column_name [Order BY ASC/DESC column_name]
+[Separator ‘分隔符’])
+SET group_concat_max_len = 2048 -- default 1024
+</code></pre></div><h3 id="标量函数"><a href="#标量函数" class="header-anchor">#</a> 标量函数</h3> <blockquote><p>Scalar function</p></blockquote> <h4 id="数学函数"><a href="#数学函数" class="header-anchor">#</a> 数学函数</h4> <ul><li>ABS(x) 返回 x 的绝对值</li> <li>BIN(x) 返回 x 的二进制（OCT 返回八进制，HEX 返回十六进制）</li> <li>CEILING(x) 返回大于 x 的最小整数值</li> <li>EXP(x) 返回值 e（自然对数的底）的 x 次方</li> <li>FLOOR(x) 返回小于 x 的最大整数值</li> <li>GREATEST(x1,x2,…,xn) 返回集合中最大的值</li> <li>LEAST(x1,x2,…,xn) 返回集合中最小的值</li> <li>LN(x) 返回 x 的自然对数</li> <li>LOG(x,y) 返回 x 的以 y 为底的对数</li> <li>MOD(x,y) 返回 x / y 的模（余数）</li> <li>PI() 返回 PI 的值（圆周率）</li> <li>RAND() 返回 ０ 到 １ 内的随机值,可以通过提供一个种子参数使随机数生成器生成一个指定的值</li> <li>ROUND(x,y) 返回参数 x 的四舍五入的有 y 位小数的值</li> <li>SIGN(x) 返回代表数字 x 的符号的值</li> <li>SQRT(x) 返回一个数的平方根</li> <li>TRUNCATE(x,y) 返回数字 x 截短为 y 位小数的结果</li></ul> <h4 id="字符串函数"><a href="#字符串函数" class="header-anchor">#</a> 字符串函数</h4> <ul><li>ASCII(char) 返回字符的 ASCII 码值</li> <li>BIT_LENGTH(str) 返回字符串的比特长度</li> <li>CONCAT(s1,s2…,sn) 将 s1,s2...,sn 连接成字符串</li> <li>CONCAT_WS(sep,s1,s2…,sn) 将 s1,s2...,sn 连接成字符串，并用 sep 字符间隔</li> <li>INSERT(str,x,y,instr) 将字符串 str 从第 x 位置开始，y 个字符长的子串替换为字符串</li> <li>instr</li> <li>FIND_IN_SET(str,list) 分析逗号分隔的 list 列表，如果发现 str，返回 str 在 list</li> <li>中的位置</li> <li>LCASE(str)或LOWER(str) 返回将字符串 str 中所有字符改变为小写后的结果</li> <li>LEFT(str,x) 返回字符串 str 中最左边的 x 个字符</li> <li>LENGTH(s) 返回字符串 str 中的字符数</li> <li>LTRIM(str) 从字符串 str 中切掉开头的空格</li> <li>POSITION(substr,str) 返回子串 substr 在字符串 str 中第一次出现的位置</li> <li>QUOTE(str) 用反斜杠转义 str 中的单引号</li> <li>REPEAT(str,srchstr,rplcstr) 返回字符串 str 重复 x 次的结果</li> <li>REVERSE(str) 返回颠倒字符串 str 的结果</li> <li>RIGHT(str,x) 返回字符串 str 中最右边的 x 个字符</li> <li>RTRIM(str) 返回字符串 str 尾部的空格STRCMP(s1,s2) 比较字符串 s1 和 s2</li> <li>TRIM(str) 去除字符串首部和尾部的所有空格</li> <li>UCASE(str)或UPPER(str) 返回将字符串 str 中所有字符转变为大写后的结果</li></ul> <h4 id="日期和时间函数"><a href="#日期和时间函数" class="header-anchor">#</a> 日期和时间函数</h4> <ul><li>CURDATE()或CURRENT_DATE() 返回当前的日期</li> <li>CURTIME()或CURRENT_TIME() 返回当前的时间</li> <li>DATE_ADD(date,INTERVAL int keyword) 返回日期 date 加上间隔时间 int 的结果</li> <li>DATE_FORMAT(date,fmt) 依照指定的 fmt 格式格式化日期 date 值</li> <li>DATE_SUB(date,INTERVAL int keyword) 返回日期 date 加上间隔时间 int 的结果</li> <li>DAYOFWEEK(date) 返回 date 所代表的一星期中的第几天(1~7)</li> <li>DAYOFMONTH(date) 返回 date 是一个月的第几天(1~31)</li> <li>DAYOFYEAR(date) 返回 date 是一年的第几天(1~366)</li> <li>DAYNAME(date) 返回 date 的星期名，如：SELECT DAYNAME(CURRENT_DATE);</li> <li>FROM_UNIXTIME(ts,fmt) 根据指定的 fmt 格式，格式化 UNIX 时间戳 ts</li> <li>HOUR(time) 返回 time 的小时值(0~23)</li> <li>MINUTE(time) 返回 time 的分钟值(0~59)</li> <li>MONTH(date) 返回 date 的月份值(1~12)</li> <li>MONTHNAME(date) 返回 date 的月份名</li> <li>NOW() 返回当前的日期和时间</li> <li>QUARTER(date) 返回 date 在一年中的季度(1~4)</li> <li>WEEK(date) 返回日期 date 为一年中第几周(0~53)</li> <li>YEAR(date) 返回日期 date 的年份(1000~9999)</li></ul> <hr> <h2 id="数据库设计"><a href="#数据库设计" class="header-anchor">#</a> 数据库设计</h2> <h3 id="数据库的设计-范式"><a href="#数据库的设计-范式" class="header-anchor">#</a> 数据库的设计 - 范式</h3> <blockquote><p>NF 规范的形式</p></blockquote> <ol><li>1NF: 没有复义的列 <code>添加列</code></li> <li>2NF: 每行可以区分 <code>加主键</code></li> <li>3NF: 没有冗余的列 <code>添加表</code></li></ol> <blockquote><p>3NF: 表中不能含有其他表的非主关键字值</p></blockquote> <h3 id="电商网站"><a href="#电商网站" class="header-anchor">#</a> 电商网站</h3> <ol><li>电商网站</li></ol> <ul><li>db_ec</li> <li>tables
+<ul><li>user</li> <li>product</li> <li>order</li></ul></li></ul> <p>参考网<a href="http://you.163.com/" target="_blank" rel="noopener noreferrer">网易-严选<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <div class="language-mysql extra-class"><pre class="language-text"><code>drop database if exists db_ec;
+create database db_ec;
+
+-- user table
+drop table if exists db_ec.user;
+create table db_ec.user
+(
+  id       int auto_increment primary key comment 'id PK',
+  email    varchar(255) not null unique comment 'email NN UN',
+  password varchar(255) not null comment 'password NN',
+  mobile   varchar(255) not null unique comment 'mobile NN UN'
+) comment 'user table';
+
+-- user table
+drop table if exists db_ec.user_info;
+create table db_ec.user_info
+(
+  id     int auto_increment primary key comment 'id PK',
+  avatar varchar(255) comment 'avatar',
+  gender char(2) comment 'gender',
+  city   varchar(255) comment 'city',
+  userId int comment 'user id FK'
+) comment 'user info table';
+
+-- category table
+drop table if exists db_ec.category;
+create table db_ec.category
+(
+  id         int auto_increment primary key comment 'id PK',
+  title      varchar(255) not null comment 'title NN',
+  picture    varchar(255) comment 'category picture',
+  categoryId int comment 'parent category id FK'
+) comment 'category table';
+
+-- product table
+drop table if exists db_ec.product;
+create table db_ec.product
+(
+  id            int auto_increment primary key comment 'id PK',
+  title         varchar(255)  not null comment 'title NN',
+  price         decimal(8, 2) not null comment 'price NN',
+  originalPrice decimal(8, 2) comment 'original price',
+  -- ...
+  -- slidePictures text not null comment 'slide pictures', -- '1.jpg 2.jpg 3.jpg 4.jpg 5.jpg'
+  -- detail pictures ?
+  categoryId    int comment 'category id FK'
+) comment 'product table';
+
+
+-- pictures table
+drop table if exists db_ec.pictures;
+create table db_ec.pictures
+(
+  id        int auto_increment primary key comment 'id PK',
+  title     varchar(255) not null unique comment 'title NN UN',
+  type      int(1)       not null comment 'type: 1-slide picture 2-detail picture',
+  productId int comment 'product id FK'
+) comment 'pictures table';
+
+
+alter table db_ec.user_info
+  add constraint
+    user_info_fk_userId
+    foreign key (userId)
+      references db_ec.user (id);
+
+alter table db_ec.category
+  add constraint
+    category_fk_categoryId
+    foreign key (categoryId)
+      references db_ec.category (id);
+
+alter table db_ec.product
+  add constraint
+    product_fk_categoryId
+    foreign key (categoryId)
+      references db_ec.category (id);
+
+alter table db_ec.pictures
+  add constraint
+    pictures_fk_productId
+    foreign key (productId)
+      references db_ec.product (id);
+
+
+select *
+from db_ec.user;
+
+select *
+from db_ec.user_info;
+
+select *
+from db_ec.category;
+
+select *
+from db_ec.product;
+
+select *
+from db_ec.pictures;
+</code></pre></div><h3 id="春游报名系统"><a href="#春游报名系统" class="header-anchor">#</a> 春游报名系统</h3> <ul><li>管理员登录之后，添加活动名称，可以对活动进行 CRUD</li> <li>学生注册</li> <li>学生登录之后，选择自己想参加的活动，报名</li> <li>管理员登录之后，查询学生报名情况，也可以选择活动，查看这个活动的报名情况</li></ul> <div class="language-mysql extra-class"><pre class="language-text"><code>drop database if exists db_a;
+create database db_a;
+
+drop table if exists db_a.user;
+create table db_a.user
+(
+  id       int auto_increment primary key comment 'id PK',
+  username varchar(255) not null comment 'username NN',
+  password varchar(255) not null comment 'password NN',
+  role     int(1)       not null default 0 comment 'role 0-student 1-admin NN'
+) comment 'user table';
+
+drop table if exists db_a.activity;
+create table db_a.activity
+(
+  id    int auto_increment primary key comment 'id PK',
+  title varchar(255) not null comment 'activity title NN'
+) comment 'activity table';
+
+drop table if exists db_a.enroll;
+create table db_a.enroll
+(
+  id         int auto_increment primary key comment 'id PK',
+  time       datetime not null default now() comment 'enroll time NN',
+  userId     int      not null comment 'user id FK',
+  activityId int      not null comment 'activity id FK'
+) comment 'enroll table';
+
+alter table db_a.enroll
+  add constraint
+    enroll_fk_userId
+    foreign key (userId)
+      references db_a.user (id);
+
+alter table db_a.enroll
+  add constraint
+    enroll_fk_activityId
+    foreign key (activityId)
+      references db_a.activity (id);
+
+-- add admin
+insert into db_a.user value (null, 'admin', md5('123'), 1);
+
+-- admin sign in 'xxx', 'yyy'
+select *
+from db_a.user
+where username = 'admin'
+  and password = md5('123');
+
+-- create
+insert into db_a.activity value (null, '植物园一日游');
+insert into db_a.activity value (null, '动物园一日游');
+
+-- delete
+delete
+from db_a.activity
+where id = 1;
+
+-- update
+update db_a.activity
+set title = ''
+where id = 1;
+
+-- retrieve
+select *
+from activity;
+
+
+-- student sign up
+insert into db_a.user(username, password) value ('Tom', md5('abc'));
+insert into db_a.user(username, password) value ('Jerry', md5('def'));
+insert into db_a.user(username, password) value ('Tester', md5('ghi'));
+
+
+-- student sign in 'xxx', 'yyy'
+select *
+from db_a.user
+where username = 'jerry'
+  and password = md5('def');
+
+# delete from db_a.user;
+# set foreign_key_checks = 0;
+# set foreign_key_checks = 1;
+# truncate db_a.user;
+
+-- student enroll
+insert into db_a.enroll(id, userId, activityId) value (null, 2, 1);
+insert into db_a.enroll(id, userId, activityId) value (null, 3, 2);
+
+-- admin sign in retrieve
+select u.username, a.title
+from db_a.user u
+       inner join db_a.enroll e
+                  on u.id = e.userId
+       inner join db_a.activity a
+                  on e.activityId = a.id;
+
+select u.username, a.title
+from db_a.user u
+       inner join db_a.enroll e
+                  on u.id = e.userId
+       inner join db_a.activity a
+                  on e.activityId = a.id
+where a.id = 1;
+
+select *
+from db_a.user;
+select *
+from db_a.activity;
+select *
+from db_a.enroll;
+</code></pre></div><hr> <h2 id="索引的使用"><a href="#索引的使用" class="header-anchor">#</a> 索引的使用</h2> <ul><li>什么叫做索引？索引有什么用？
+<ul><li>表的数据量比较小  不创建索引</li></ul></li> <li>索引存在的缺点/弊端</li> <li>什么情况？什么列适合创建索引。
+<ul><li>值相对离散</li></ul></li></ul> <div class="language-mysql extra-class"><pre class="language-text"><code>show index from scott.emp;
+-- MySQL, Primary key &amp; Foreign key 默认为索引
+
+create index idx_ename on scott.emp (ENAME);
+
+drop index idx_ename on scott.emp;
+
+show index from db_school.student;
+
+select ENAME
+from scott.emp;
+
+-- 如果 index 只有好处，没有必要存在这个概念
+create index ind_password on db_csdn.user(password); -- 434176 KB
+create index ind_username on db_csdn.user(username); -- 434176 KB
+create index ind_email on db_csdn.user(email); -- 434176 KB
+
+show index from db_csdn.user;
+
+select password, count(password)
+from db_csdn.user
+group by password
+order by 2 desc
+limit 10 offset 0;
+
+select *
+from db_csdn.user
+limit 100 offset 0;
+
+select password
+from db_csdn.user
+where password regexp '^\198[0-9]{1}[0-9]{1,2}[0-9]{1,2}$';
+</code></pre></div><hr> <h2 id="实战"><a href="#实战" class="header-anchor">#</a> 实战</h2> <h3 id="ip"><a href="#ip" class="header-anchor">#</a> IP</h3> <blockquote><p>将IP Address导入mysql数据库</p> <p>IP  Internet  Protocol  互联网协议</p></blockquote> <ol><li>IPv4
+<ul><li>范围i在<code>[0-255]</code>   例如<code>192.168.1.1</code></li> <li>地址不太够</li></ul></li> <li>IPv6（暂时不考虑）</li></ol> <h4 id="load"><a href="#load" class="header-anchor">#</a> Load</h4> <div class="language-mysql extra-class"><pre class="language-text"><code>LOAD DATA LOCAL INFILE 'path_to_your_csv_file'
+INTO TABLE your_db.your_table
+FIELDS TERMINATED BY ',' (column_name1, column_name2, ...)
+SET id = NULL;
+</code></pre></div><h4 id="什么是csv？"><a href="#什么是csv？" class="header-anchor">#</a> 什么是csv？</h4> <h4 id="使用正则表达式"><a href="#使用正则表达式" class="header-anchor">#</a> 使用正则表达式</h4> <p>使用正则表达式替换IP中的数据
+<code>(\d+\.\d+\.\d+\.\d+)</code>
+替换为
+<code>$1|</code></p> <p>转为UTF-8， 保存</p> <div class="language-mysql extra-class"><pre class="language-text"><code>drop database if exists db_ip;
+create database db_ip;
+
+drop table if exists db_ip.ip;
+create table db_ip.ip
+(
+  id  int auto_increment primary key comment 'id PK',
+  min varchar(255) not null comment 'min ip NN',
+  max varchar(255) not null comment 'max ip NN',
+  loc varchar(255) not null comment 'location NN'
+) comment 'ip address table';
+
+load data local infile 'd:/ip.txt'
+  into table db_ip.ip
+  fields terminated by '|'
+  (min, max, loc)
+  set id = null;
+
+select *
+from db_ip.ip;
+
+select count(*)
+from db_ip.ip;
+
+update db_ip.ip
+set min = trim(min),
+    max = trim(max),
+    loc = trim(loc);
+
+-- 166.111.3.207
+-- SQL
+
+select inet_aton('166.111.3.207'); -- inet: internet aton: address to number
+select inet_ntoa(2792293327);
+
+select loc
+from db_ip.ip
+where inet_aton('166.111.3.207') between inet_aton(min) and inet_aton(max);
+</code></pre></div><hr> <h3 id="user"><a href="#user" class="header-anchor">#</a> User</h3> <blockquote><p>CSDN密码账号导入数据库</p></blockquote> <ul><li><p>数据导入 MySQL 数据库</p></li> <li><p>查询</p> <ul><li>各列值的快速模糊查询</li> <li>排名前十的密码</li> <li>排名前十的邮箱</li> <li>用户名和邮箱名相同的数据</li> <li>密码可能是生日的数据
+<ul><li>哪一年出生的用户最多</li> <li>哪个星座的用户最多</li></ul></li> <li>密码是 QQ 号的</li> <li>密码是手机号的
+<ul><li>哪个运营商的用户最多</li></ul></li> <li>弱密码用户数据</li></ul> <div class="language- extra-class"><pre class="language-text"><code> 短密码
+ 纯数字密码
+ 纯字母密码
+</code></pre></div><ul><li>强密码用户数据</li></ul> <div class="language- extra-class"><pre class="language-text"><code> 长密码
+ 字母和数字
+ 含特殊符号
+</code></pre></div></li></ul> <div class="language-mysql extra-class"><pre class="language-text"><code>drop database if exists db_csdn;
+create database db_csdn;
+
+drop table if exists db_csdn.user;
+create table db_csdn.user
+(
+  id       int auto_increment primary key comment 'id PK',
+  username varchar(255) not null comment 'username NN',
+  password varchar(255) not null comment 'password NN',
+  email    varchar(255) not null comment 'email NN'
+) comment 'user table';
+
+load data local infile 'd:/csdn.txt'
+  into table db_csdn.user
+  fields terminated by '❤'
+  (username, password, email)
+  set id = null;
+
+select *
+from db_csdn.user;
+
+-- 查询排名前十的密码？
+
+select password, count(password)
+from db_csdn.user
+group by password
+order by 2 desc
+limit 10 offset 0;
+
+select *
+from db_csdn.user
+where password like '%ppnn13_dkstFeb.1st%';
+
+
+select md5('123Asd!@#123Asd!@#');
+
+select *
+from db_csdn.user;
+</code></pre></div><hr> <h2 id="sql语句练习"><a href="#sql语句练习" class="header-anchor">#</a> SQL语句练习</h2> <h3 id="练习数据库创建"><a href="#练习数据库创建" class="header-anchor">#</a> 练习数据库创建</h3> <div class="language-mysql extra-class"><pre class="language-text"><code>-- MySQL dump 10.13  Distrib 5.6.30, for Win32 (AMD64)
+--
+-- Host: localhost    Database: scott
+-- ------------------------------------------------------
+-- Server version	5.6.30
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT = @@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS = @@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION = @@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE = @@TIME_ZONE */;
+/*!40103 SET TIME_ZONE = '+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS = @@UNIQUE_CHECKS, UNIQUE_CHECKS = 0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS = @@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS = 0 */;
+/*!40101 SET @OLD_SQL_MODE = @@SQL_MODE, SQL_MODE = 'NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES = @@SQL_NOTES, SQL_NOTES = 0 */;
+
+--
+-- Current Database: `scott`
+--
+DROP DATABASE IF EXISTS `scott`;
+CREATE DATABASE /*!32312 IF NOT EXISTS */ `scott` /*!40100 DEFAULT CHARACTER SET utf8 */;
+
+USE `scott`;
+
+--
+-- Table structure for table `dept`
+--
+
+DROP TABLE IF EXISTS `dept`;
+/*!40101 SET @saved_cs_client = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `dept` (
+  `DEPTNO` INT(2) NOT NULL,
+  `DNAME`  VARCHAR(14) DEFAULT NULL,
+  `LOC`    VARCHAR(13) DEFAULT NULL,
+  PRIMARY KEY (`DEPTNO`)
+)
+  ENGINE = InnoDB
+  DEFAULT CHARSET = utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `dept`
+--
+
+LOCK TABLES `dept` WRITE;
+/*!40000 ALTER TABLE `dept`
+  DISABLE KEYS */;
+INSERT INTO `dept` VALUES (10, 'ACCOUNTING', 'NEW YORK'), (20, 'RESEARCH', 'DALLAS'), (30, 'SALES', 'CHICAGO'),
+  (40, 'OPERATIONS', 'BOSTON');
+/*!40000 ALTER TABLE `dept`
+  ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `emp`
+--
+
+DROP TABLE IF EXISTS `emp`;
+/*!40101 SET @saved_cs_client = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `emp` (
+  `EMPNO`    INT(4) NOT NULL,
+  `ENAME`    VARCHAR(10)  DEFAULT NULL,
+  `JOB`      VARCHAR(9)   DEFAULT NULL,
+  `MGR`      INT(4)       DEFAULT NULL,
+  `HIREDATE` DATE         DEFAULT NULL,
+  `SAL`      DOUBLE(7, 2) DEFAULT NULL,
+  `COMM`     DOUBLE(7, 2) DEFAULT NULL,
+  `DEPTNO`   INT(2)       DEFAULT NULL,
+  PRIMARY KEY (`EMPNO`),
+  KEY `FK_emp_deptno` (`DEPTNO`),
+  CONSTRAINT `FK_emp_deptno` FOREIGN KEY (`DEPTNO`) REFERENCES `dept` (`DEPTNO`)
+)
+  ENGINE = InnoDB
+  DEFAULT CHARSET = utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `emp`
+--
+
+LOCK TABLES `emp` WRITE;
+/*!40000 ALTER TABLE `emp`
+  DISABLE KEYS */;
+INSERT INTO `emp` VALUES (7499, 'ALLEN', 'SALESMAN', 7698, '1981-02-20', 1600.00, 300.00, 30),
+  (7521, 'WARD', 'SALESMAN', 7698, '1981-02-22', 1250.00, 500.00, 30),
+  (7566, 'JONES', 'MANAGER', 7839, '1981-04-02', 2975.00, NULL, 20),
+  (7654, 'MARTIN', 'SALESMAN', 7698, '1981-09-28', 1250.00, 1400.00, 30),
+  (7698, 'BLAKE', 'MANAGER', 7839, '1981-05-01', 2850.00, NULL, 30),
+  (7782, 'CLARK', 'MANAGER', 7839, '1981-06-09', 2450.00, NULL, 10),
+  (7788, 'SCOTT', 'ANALYST', 7566, '1987-07-13', 3000.00, NULL, 20),
+  (7839, 'KING', 'PRESIDENT', NULL, '1981-11-30', 5000.00, NULL, NULL),
+  (7844, 'TURNER', 'SALESMAN', 7698, '1981-09-08', 1500.00, 0.00, 30),
+  (7876, 'ADAMS', 'CLERK', 7788, '1987-07-13', 1100.00, NULL, 20),
+  (7900, 'JAMES', 'CLERK', 7698, '1981-12-03', 950.00, NULL, 30),
+  (7902, 'FORD', 'ANALYST', 7566, '1981-12-03', 3000.00, NULL, 20),
+  (7934, 'MILLER', 'CLERK', 7782, '1982-01-23', 1300.00, NULL, 10);
+/*!40000 ALTER TABLE `emp`
+  ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `salgrade`
+--
+
+DROP TABLE IF EXISTS `salgrade`;
+/*!40101 SET @saved_cs_client = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `salgrade` (
+  `GRADE` INT(11) DEFAULT NULL,
+  `LOSAL` INT(11) DEFAULT NULL,
+  `HISAL` INT(11) DEFAULT NULL
+)
+  ENGINE = InnoDB
+  DEFAULT CHARSET = utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `salgrade`
+--
+
+LOCK TABLES `salgrade` WRITE;
+/*!40000 ALTER TABLE `salgrade`
+  DISABLE KEYS */;
+INSERT INTO `salgrade` VALUES (1, 700, 1200), (2, 1201, 1400), (3, 1401, 2000), (4, 2001, 3000), (5, 3001, 9999);
+/*!40000 ALTER TABLE `salgrade`
+  ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE = @OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE = @OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS = @OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS = @OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT = @OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS = @OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION = @OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES = @OLD_SQL_NOTES */;
+
+-- Dump completed on 2016-07-20 11:10:57
+
+
+show tables from scott;
+
+desc scott.emp;
+select *
+from scott.emp;
+desc scott.dept;
+select *
+from scott.dept;
+desc scott.salgrade;
+</code></pre></div><h3 id="练习题-一"><a href="#练习题-一" class="header-anchor">#</a> 练习题(一)</h3> <div class="language-mysql extra-class"><pre class="language-text"><code># 1. 查找部门 30 中员工的详细信息
+select *
+from scott.emp
+where DEPTNO = 30;
+# 2. 找出从事 clerk 工作的员工的编号、姓名、部门号
+select EMPNO, ENAME, DEPTNO
+from scott.emp
+where JOB = 'clerk';
+# 3. 检索出奖金多于基本工资的员工信息
+select *
+from scott.emp
+where COMM &gt; SAL;
+# 4. 检索出奖金多于基本工资 30% 员工信息
+select *
+from scott.emp
+where COMM &gt; SAL * 0.3;
+# 5. 希望看到 10 部门的经理或者 20 部门的职员 clerk 的信息
+select *
+from scott.emp
+where (DEPTNO = 10 and JOB = 'manager')
+   or (DEPTNO = 20 and JOB = 'clerk');
+# 6. 找出 10 部门的经理、20 部门的职员或者既不是经理也不是职员但是高于 2000 元的员工信息
+select *
+from scott.emp
+where (DEPTNO = 10 and JOB = 'manager')
+   or (DEPTNO = 20 and JOB = 'clerk')
+   or (JOB &lt;&gt; 'manager' and JOB &lt;&gt; 'clerk' and SAL &gt; 2000);
+# 7. 找出获得奖金的员工的工作
+select JOB, COMM
+from scott.emp
+where COMM &gt; 0;
+# 8. 找出奖金少于 100 或者没有获得奖金的员工的信息
+select *
+from scott.emp
+where COMM &lt; 100
+   or COMM is null;
+# 9. 查找员工雇佣日期是当月的最后一天的员工信息
+select *
+from scott.emp
+where HIREDATE = last_day(HIREDATE);
+# 10. 检索出雇佣年限超过 35 年的员工信息
+select *
+from scott.emp
+where date_add(HIREDATE, interval 35 year) &lt; now();
+# 11. 找出姓名以 A、B、S 开始的员工信息
+select ENAME
+from scott.emp
+WHERE substr(ENAME, 1, 1) IN ('a', 'b', 's');
+# 12. 找到名字长度为 4 个字符的员工信息
+select *
+from scott.emp
+where length(ENAME) = 4;
+# 13. 名字中不包含 R 字符的员工信息
+select *
+from scott.emp
+where ENAME not like '%r%';
+# 14. 找出员工名字的前3个字符
+select ENAME, substr(ENAME, 1, 3)
+from scott.emp;
+# 15. 将名字中 A 改为 a
+select ENAME, replace(ENAME, 'a', 'A')
+from scott.emp;
+# 16. 将员工的雇佣日期拖后 10 年
+select HIREDATE, date_add(HIREDATE, interval 10 year)
+from scott.emp;
+# 17. 返回员工的详细信息并按姓名排序
+select *
+from scott.emp
+order by ENAME;
+# 18. 返回员工的信息并按员工的工作年限降序排列
+select *
+from scott.emp
+order by HIREDATE;
+# 19. 返回员工的信息并按工作降序、工资升序排列
+select *
+from scott.emp
+order by JOB desc, sal + ifnull(COMM, 0);
+# 20. 返回员工的姓名、雇佣年份和月份，并按月份和雇佣日期排序
+select ENAME, year(HIREDATE), month(HIREDATE), HIREDATE
+from scott.emp
+order by 3, HIREDATE;
+# 21. 计算员工的日薪，每月按 30 天
+select round((SAL + ifnull(COMM, 0)) / 30, 2)
+from scott.emp;
+# 22. 找出 2 月份雇佣的员工
+select *
+from scott.emp
+where month(HIREDATE) = 9;
+# 23. 至今为止，员工被雇佣的天数
+select ENAME, HIREDATE, datediff(now(), HIREDATE)
+from scott.emp;
+# 24. 找出姓名中包含 A 的员工信息
+select *
+from scott.emp
+where ENAME like '%a%';
+# 25. 计算出员工被雇佣了多少年、多少月、多少日
+</code></pre></div><h3 id="练习题-二"><a href="#练习题-二" class="header-anchor">#</a> 练习题(二)</h3> <div class="language-mysql extra-class"><pre class="language-text"><code># 1. 返回拥有员工的部门名、部门号
+select distinct d.DNAME, d.DEPTNO
+from scott.emp e
+       join scott.dept d
+            on e.DEPTNO = d.DEPTNO;
+# 2. 工资多于 scott 的员工信息
+select *
+from scott.emp
+where (SAL + ifnull(COMM, 0)) &gt; (
+  select (SAL + ifnull(COMM, 0))
+  from scott.emp
+  where ENAME = 'sco_tt'
+);
+# 3. 返回员工和所属经理的姓名?
+select e1.ENAME, e2.ENAME
+from scott.emp e1
+       join scott.emp e2
+            on e1.MGR = e2.EMPNO;
+# 4. 返回雇员的雇佣日期早于其经理雇佣日期的员工及其经理姓名
+select e1.ENAME, e2.ENAME
+from scott.emp e1
+       join scott.emp e2
+            on e1.MGR = e2.EMPNO
+where e1.HIREDATE &lt; e2.HIREDATE;
+# 5. 返回员工姓名及其所在的部门名称
+select e.ENAME, d.DNAME
+from scott.emp e
+       join scott.dept d
+            on e.DEPTNO = d.DEPTNO;
+# 6. 返回从事 clerk 工作的员工姓名和所在部门名称
+select e.ENAME, d.DNAME
+from scott.emp e
+       join scott.dept d
+            on e.DEPTNO = d.DEPTNO
+where e.JOB = 'clerk';
+# 7. 返回部门号及其本部门的最低工资
+select DEPTNO, min(sal + ifnull(COMM, 0))
+from scott.emp
+group by DEPTNO;
+# 8. 返回销售部 sales 所有员工的姓名
+select e.ENAME
+from scott.emp e
+       join scott.dept d
+            on e.DEPTNO = d.DEPTNO
+where d.DNAME = 'sales';
+# 9. 返回工资多于平均工资的员工
+select *
+from scott.emp
+where (sal + ifnull(COMM, 0)) &gt; (
+  select avg(sal + ifnull(COMM, 0))
+  from scott.emp
+);
+# 10. 返回与 scott 从事相同工作的员工
+select *
+from scott.emp
+where JOB = (
+  select JOB
+  from scott.emp
+  where ENAME = 'sco_tt'
+);
+# 11. 返回比 30 部门员工平均工资高的员工姓名与工资
+select *
+from scott.emp
+where SAL + ifnull(comm, 0) &gt; (
+  select avg(sal + ifnull(COMM, 0))
+  from scott.emp
+  where DEPTNO = 30
+);
+# 12. 返回工资高于30部门所有员工工资的员工信息
+select *
+from scott.emp
+where SAL + ifnull(comm, 0) &gt; (
+  select max(sal + ifnull(COMM, 0))
+  from scott.emp
+  where DEPTNO = 30
+);
+# 13. 返回部门号、部门名、部门所在位置及其每个部门的员工总数
+select d.DEPTNO, d.DNAME, d.LOC, count(e.ENAME)
+from scott.emp e
+       right join scott.dept d
+                  on e.DEPTNO = d.DEPTNO
+group by d.DEPTNO;
+# 14. 返回员工的姓名、所在部门名及其工资
+select e.ENAME, d.DNAME, e.SAL + ifnull(e.COMM, 0)
+from scott.emp e
+       join scott.dept d
+            on e.DEPTNO = d.DEPTNO;
+# 15. 返回雇员表中不在同一部门但是从事相同工作的员工信息
+select e1.ENAME, e2.ENAME
+from scott.emp e1
+       join scott.emp e2
+where e1.DEPTNO &lt;&gt; e2.DEPTNO
+  and e1.JOB = e2.JOB;
+# 16. 返回员工的详细信息，包括部门名
+select e.*, d.DNAME
+from scott.emp e
+       join scott.dept d
+            on e.DEPTNO = d.DEPTNO;
+# 17. 返回员工工作及其从事此工作的最低工资
+select JOB, min(sal + ifnull(COMM, 0))
+from scott.emp
+group by job;
+# 18. 返回不同部门经理的最低工资
+select deptno, min(sal + ifnull(COMM, 0))
+from scott.emp
+where JOB = 'manager'
+group by DEPTNO;
+
+select *
+from scott.emp
+where DEPTNO = 20;
+# 19. 计算出员工的年薪，并且以年薪排序
+select (sal + ifnull(comm, 0)) * 12
+from scott.emp
+order by 1;
+# 20. 返回工资处于第 4 级别的员工的姓名
+select e.ENAME, s.GRADE
+from scott.salgrade s
+       join scott.emp e
+            on e.SAL + ifnull(e.COMM, 0) between s.LOSAL and s.HISAL
+where s.GRADE = 4;
+</code></pre></div><hr> <section style="border-top:2px solid #eaecef;padding-top:1rem;margin-top:2rem;"><div><span data-flag-title="Your Article Title" class="leancloud-visitors"><em class="post-meta-item-text">阅读量： </em> <i class="leancloud-visitors-count"></i></span></div> <h3><a href="javascript:;"></a>
+    评 论：
+  </h3> <div id="vcomments"></div></section></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/Hansiyuan131/hansiyuan131.github.io/edit/feature/docs/数据库/Mysql/002MySQL基础.md" target="_blank" rel="noopener noreferrer">编辑此文档</a> <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></div> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">8/31/2020, 9:36:51 AM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/数据库/Mysql/001Mysql安装.html" class="prev">
+        MySQL Install
+      </a></span> <span class="next"><a href="/数据库/Mysql/003MySQL数据库设计实战.html">
+        MySQL数据库设计实战
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----><!----></div></div>
+    <script src="/assets/js/app.d214fd8d.js" defer></script><script src="/assets/js/2.cb1efa29.js" defer></script><script src="/assets/js/35.15df2c18.js" defer></script><script src="/assets/js/6.180eae89.js" defer></script><script src="/assets/js/3.86630006.js" defer></script>
+  </body>
+</html>
