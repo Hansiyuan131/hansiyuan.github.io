@@ -27,7 +27,7 @@ self.addEventListener('message', (event) => {
 self.__precacheManifest = [
   {
     "url": "404.html",
-    "revision": "f3071c21acbddd11a3e30d1eeb89e33a"
+    "revision": "7c38f694c58893fa7098fb8a6535f20f"
   },
   {
     "url": "apple-touch-icon.png",
@@ -86,8 +86,8 @@ self.__precacheManifest = [
     "revision": "7ffd4685d94d7843ed9f99a8b6aa8936"
   },
   {
-    "url": "assets/js/app.f00ff40f.js",
-    "revision": "6b4a7de6d996444ff1dcd237979015ea"
+    "url": "assets/js/app.147557e0.js",
+    "revision": "9041e4422aa1d471e1339607fe7829dc"
   },
   {
     "url": "favicon-16x16.png",
@@ -131,19 +131,19 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "da500bab30b9956e9ac958a0ac34375d"
+    "revision": "1e4d41504d66bf48870f3166aad7772d"
   },
   {
     "url": "常用导航/index.html",
-    "revision": "d356aee5d140bd0550c6e4f1da4a3a14"
+    "revision": "bb41de76ffd51418c72760314ed451bd"
   },
   {
     "url": "项目/iMall/index.html",
-    "revision": "5c94b94e1a13fd190e23b6c21b0aa579"
+    "revision": "ae2fe94cc6ab6f272c8419af34cc9a4e"
   },
   {
     "url": "项目/sn-reader/index.html",
-    "revision": "1949876b85822ff137c7f9c51f04dfbb"
+    "revision": "94e36bdfd0f8483f6925daadce3c136d"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
